@@ -26,7 +26,7 @@ unfound = 0 # count number we cannot match for this threshold
 # MAPS and their params
 zoom_start = 6
 
-map_osm = folium.Map(location=[53.5074, -0.1 ], zoom_start=zoom_start)
+map_osm = folium.Map(location=[53.5074, -0.1 ], zoom_start=zoom_start, tiles="Cartodb Positron")
 output_osm = 'unis_clustered.html'
 marker_cluster = folium.MarkerCluster("UK Universities and Student Numbers").add_to(map_osm)
 
