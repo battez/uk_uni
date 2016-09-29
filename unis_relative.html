@@ -1,0 +1,4434 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_ead01d63bfcb43b784bcf8ff91791533 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_ead01d63bfcb43b784bcf8ff91791533" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_ead01d63bfcb43b784bcf8ff91791533 = L.map('map_ead01d63bfcb43b784bcf8ff91791533', {
+                                           center:[53.5074,-0.1],
+                                           zoom: 6,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_7cd9330b518140bd9581ea387e27b66b = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+
+        
+        
+            
+
+            var circle_marker_f521ce54ff9941eeba81fbca2672e41f = L.circle(
+                [57.165019,-2.099122],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_31475334fe9647778eae2a190c67c2a6 = L.popup({maxWidth: '300'});
+
+            
+                var html_ccfa914b470f44b0ba167fc47fa0350c = $('         <div id="html_ccfa914b470f44b0ba167fc47fa0350c"                 style="width: 100.0%; height: 100.0%;">                 University of Aberdeen // Students:14035</div>                 ')[0];
+                popup_31475334fe9647778eae2a190c67c2a6.setContent(html_ccfa914b470f44b0ba167fc47fa0350c);
+            
+
+            circle_marker_f521ce54ff9941eeba81fbca2672e41f.bindPopup(popup_31475334fe9647778eae2a190c67c2a6);
+
+            
+        
+        
+            
+
+            var circle_marker_c9de6c8d388d44679f3c3e0bbe53ebce = L.circle(
+                [56.46334,-2.973441],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_9ad9f16ac1154932865772de55d27da5 = L.popup({maxWidth: '300'});
+
+            
+                var html_46864e31539a4de186dc1e7e0c586697 = $('         <div id="html_46864e31539a4de186dc1e7e0c586697"                 style="width: 100.0%; height: 100.0%;">                 University of Dundee // Students:15180</div>                 ')[0];
+                popup_9ad9f16ac1154932865772de55d27da5.setContent(html_46864e31539a4de186dc1e7e0c586697);
+            
+
+            circle_marker_c9de6c8d388d44679f3c3e0bbe53ebce.bindPopup(popup_9ad9f16ac1154932865772de55d27da5);
+
+            
+        
+        
+            
+
+            var circle_marker_2d518f2dbe614cbea7424b7bedb1e6bd = L.circle(
+                [52.403473,-4.043584],
+                2.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_d988079c83874160b2d4a63a74ee9228 = L.popup({maxWidth: '300'});
+
+            
+                var html_c4d38d2c22a242ba8a9f38008659ebbc = $('         <div id="html_c4d38d2c22a242ba8a9f38008659ebbc"                 style="width: 100.0%; height: 100.0%;">                 Aberystwyth University // Students:9835</div>                 ')[0];
+                popup_d988079c83874160b2d4a63a74ee9228.setContent(html_c4d38d2c22a242ba8a9f38008659ebbc);
+            
+
+            circle_marker_2d518f2dbe614cbea7424b7bedb1e6bd.bindPopup(popup_d988079c83874160b2d4a63a74ee9228);
+
+            
+        
+        
+            
+
+            var circle_marker_fdb96551478f4355ad258805f3187205 = L.circle(
+                [51.741381,0.474495],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_3443cfeaa9e74539b8f7b91b6d96f39e = L.popup({maxWidth: '300'});
+
+            
+                var html_2e7e24c6f1c345d2a7a7958b4334ffbd = $('         <div id="html_2e7e24c6f1c345d2a7a7958b4334ffbd"                 style="width: 100.0%; height: 100.0%;">                 Anglia Ruskin University // Students:19830</div>                 ')[0];
+                popup_3443cfeaa9e74539b8f7b91b6d96f39e.setContent(html_2e7e24c6f1c345d2a7a7958b4334ffbd);
+            
+
+            circle_marker_fdb96551478f4355ad258805f3187205.bindPopup(popup_3443cfeaa9e74539b8f7b91b6d96f39e);
+
+            
+        
+        
+            
+
+            var circle_marker_9abbc41db65d4435bd9593598421fe59 = L.circle(
+                [52.486637,-1.890952],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_fc9ed12956374530819f8a46cbfcd32d = L.popup({maxWidth: '300'});
+
+            
+                var html_cba1eeda0ccb40fb8fc53bd477c7ccb2 = $('         <div id="html_cba1eeda0ccb40fb8fc53bd477c7ccb2"                 style="width: 100.0%; height: 100.0%;">                 Aston University // Students:11065</div>                 ')[0];
+                popup_fc9ed12956374530819f8a46cbfcd32d.setContent(html_cba1eeda0ccb40fb8fc53bd477c7ccb2);
+            
+
+            circle_marker_9abbc41db65d4435bd9593598421fe59.bindPopup(popup_fc9ed12956374530819f8a46cbfcd32d);
+
+            
+        
+        
+            
+
+            var circle_marker_0ae78450394f4e5badc4cb99723300ec = L.circle(
+                [53.229193,-4.129437],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_2418e38fc72646f29799d5dac33fb897 = L.popup({maxWidth: '300'});
+
+            
+                var html_adb9589177034c998f95c7c0ffdbaa0b = $('         <div id="html_adb9589177034c998f95c7c0ffdbaa0b"                 style="width: 100.0%; height: 100.0%;">                 Bangor University // Students:10765</div>                 ')[0];
+                popup_2418e38fc72646f29799d5dac33fb897.setContent(html_adb9589177034c998f95c7c0ffdbaa0b);
+            
+
+            circle_marker_0ae78450394f4e5badc4cb99723300ec.bindPopup(popup_2418e38fc72646f29799d5dac33fb897);
+
+            
+        
+        
+            
+
+            var circle_marker_3cd86f29b3ac4c0c84d99306356169c0 = L.circle(
+                [51.373209,-2.440912],
+                2.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_13f5be8b37a648f1be402c07b2e6b7a7 = L.popup({maxWidth: '300'});
+
+            
+                var html_87beb21151374e82984d6df24989ca85 = $('         <div id="html_87beb21151374e82984d6df24989ca85"                 style="width: 100.0%; height: 100.0%;">                 Bath Spa University // Students:7380</div>                 ')[0];
+                popup_13f5be8b37a648f1be402c07b2e6b7a7.setContent(html_87beb21151374e82984d6df24989ca85);
+            
+
+            circle_marker_3cd86f29b3ac4c0c84d99306356169c0.bindPopup(popup_13f5be8b37a648f1be402c07b2e6b7a7);
+
+            
+        
+        
+            
+
+            var circle_marker_d9260654a5e94a4bb4633f4059e7f314 = L.circle(
+                [51.380441,-2.330673],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_cc6d829dab6f40b198243d3d388360fd = L.popup({maxWidth: '300'});
+
+            
+                var html_7d063080c4de471f9e10993386005937 = $('         <div id="html_7d063080c4de471f9e10993386005937"                 style="width: 100.0%; height: 100.0%;">                 University of Bath // Students:15570</div>                 ')[0];
+                popup_cc6d829dab6f40b198243d3d388360fd.setContent(html_7d063080c4de471f9e10993386005937);
+            
+
+            circle_marker_d9260654a5e94a4bb4633f4059e7f314.bindPopup(popup_cc6d829dab6f40b198243d3d388360fd);
+
+            
+        
+        
+            
+
+            var circle_marker_aec817811f964b74bae069062cb7f00a = L.circle(
+                [51.87825,-0.411539],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_57f68e1d78154493843abde5fd393090 = L.popup({maxWidth: '300'});
+
+            
+                var html_2a8adfa2d0004ce5b7d39c524bc6dbb0 = $('         <div id="html_2a8adfa2d0004ce5b7d39c524bc6dbb0"                 style="width: 100.0%; height: 100.0%;">                 University of Bedfordshire // Students:15655</div>                 ')[0];
+                popup_57f68e1d78154493843abde5fd393090.setContent(html_2a8adfa2d0004ce5b7d39c524bc6dbb0);
+            
+
+            circle_marker_aec817811f964b74bae069062cb7f00a.bindPopup(popup_57f68e1d78154493843abde5fd393090);
+
+            
+        
+        
+            
+
+            var circle_marker_c8b33a01c4a14c809d5db4f225b52900 = L.circle(
+                [54.584772,-5.934438],
+                5.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_baa270dce26c43e5a5866b5dfadd381b = L.popup({maxWidth: '300'});
+
+            
+                var html_8a740c3944e9476783d082ceb8b298c2 = $('         <div id="html_8a740c3944e9476783d082ceb8b298c2"                 style="width: 100.0%; height: 100.0%;">                 Queen&#39;s University Belfast // Students:23855</div>                 ')[0];
+                popup_baa270dce26c43e5a5866b5dfadd381b.setContent(html_8a740c3944e9476783d082ceb8b298c2);
+            
+
+            circle_marker_c8b33a01c4a14c809d5db4f225b52900.bindPopup(popup_baa270dce26c43e5a5866b5dfadd381b);
+
+            
+        
+        
+            
+
+            var circle_marker_4348e0208f4a4022be02ee7cbae87fee = L.circle(
+                [52.517271,-1.897287],
+                5.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_f7a7a1737cf646f9bcaef17b6be11917 = L.popup({maxWidth: '300'});
+
+            
+                var html_92fdd97397e34da2a07bee8d154d3603 = $('         <div id="html_92fdd97397e34da2a07bee8d154d3603"                 style="width: 100.0%; height: 100.0%;">                 Birmingham City University // Students:23335</div>                 ')[0];
+                popup_f7a7a1737cf646f9bcaef17b6be11917.setContent(html_92fdd97397e34da2a07bee8d154d3603);
+            
+
+            circle_marker_4348e0208f4a4022be02ee7cbae87fee.bindPopup(popup_f7a7a1737cf646f9bcaef17b6be11917);
+
+            
+        
+        
+            
+
+            var circle_marker_232dd459e2c8400f8d1281cc5e29bb42 = L.circle(
+                [52.451408,-1.930047],
+                7.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_43effe31a8ef482d871a415e7069909b = L.popup({maxWidth: '300'});
+
+            
+                var html_9ec49ca6ab8248968eba4b2cd5b71833 = $('         <div id="html_9ec49ca6ab8248968eba4b2cd5b71833"                 style="width: 100.0%; height: 100.0%;">                 University of Birmingham // Students:34160</div>                 ')[0];
+                popup_43effe31a8ef482d871a415e7069909b.setContent(html_9ec49ca6ab8248968eba4b2cd5b71833);
+            
+
+            circle_marker_232dd459e2c8400f8d1281cc5e29bb42.bindPopup(popup_43effe31a8ef482d871a415e7069909b);
+
+            
+        
+        
+            
+
+            var circle_marker_8434d9fa742f42cd9a4b9aaab3238364 = L.circle(
+                [53.243563,-0.537139],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_e987c3ad32e7483a9986258e0d4f608d = L.popup({maxWidth: '300'});
+
+            
+                var html_a87cb382cb5347038eac284691cfac7f = $('         <div id="html_a87cb382cb5347038eac284691cfac7f"                 style="width: 100.0%; height: 100.0%;">                 Bishop Grosseteste University // Students:2290</div>                 ')[0];
+                popup_e987c3ad32e7483a9986258e0d4f608d.setContent(html_a87cb382cb5347038eac284691cfac7f);
+            
+
+            circle_marker_8434d9fa742f42cd9a4b9aaab3238364.bindPopup(popup_e987c3ad32e7483a9986258e0d4f608d);
+
+            
+        
+        
+            
+
+            var circle_marker_6b628ab06ed0497eae0c2ce9944baabb = L.circle(
+                [53.573511,-2.436238],
+                2.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_a89e69cd030b475f83b00f7c08d55387 = L.popup({maxWidth: '300'});
+
+            
+                var html_af228a371daf4f0988324635e232b456 = $('         <div id="html_af228a371daf4f0988324635e232b456"                 style="width: 100.0%; height: 100.0%;">                 University of Bolton // Students:6385</div>                 ')[0];
+                popup_a89e69cd030b475f83b00f7c08d55387.setContent(html_af228a371daf4f0988324635e232b456);
+            
+
+            circle_marker_6b628ab06ed0497eae0c2ce9944baabb.bindPopup(popup_a89e69cd030b475f83b00f7c08d55387);
+
+            
+        
+        
+            
+
+            var circle_marker_58e2a3417aa04eaa95a1172f09494d7d = L.circle(
+                [50.74137,-1.898107],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_97fb6022ce274d608a2f41cdb7e6cf69 = L.popup({maxWidth: '300'});
+
+            
+                var html_a688984a45f64aaaa8656ba1b3bed393 = $('         <div id="html_a688984a45f64aaaa8656ba1b3bed393"                 style="width: 100.0%; height: 100.0%;">                 Bournemouth University // Students:18225</div>                 ')[0];
+                popup_97fb6022ce274d608a2f41cdb7e6cf69.setContent(html_a688984a45f64aaaa8656ba1b3bed393);
+            
+
+            circle_marker_58e2a3417aa04eaa95a1172f09494d7d.bindPopup(popup_97fb6022ce274d608a2f41cdb7e6cf69);
+
+            
+        
+        
+            
+
+            var circle_marker_42a9df732c0148d58471dde2194ad5e7 = L.circle(
+                [50.742979,-1.897168],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_f31f713af4ba40f2b6c084a5be11c514 = L.popup({maxWidth: '300'});
+
+            
+                var html_54cc68320da8436ab9d5033c3f30a6d2 = $('         <div id="html_54cc68320da8436ab9d5033c3f30a6d2"                 style="width: 100.0%; height: 100.0%;">                 Bournemouth University // Students:18225</div>                 ')[0];
+                popup_f31f713af4ba40f2b6c084a5be11c514.setContent(html_54cc68320da8436ab9d5033c3f30a6d2);
+            
+
+            circle_marker_42a9df732c0148d58471dde2194ad5e7.bindPopup(popup_f31f713af4ba40f2b6c084a5be11c514);
+
+            
+        
+        
+            
+
+            var circle_marker_fb5635c3213349b89e8606f9b3e1ffca = L.circle(
+                [53.791242,-1.766231],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_3c9b49e9cf7c41cbbe7d752dcf36afb9 = L.popup({maxWidth: '300'});
+
+            
+                var html_b4a745ad416548e5b395fb6def0cfc3f = $('         <div id="html_b4a745ad416548e5b395fb6def0cfc3f"                 style="width: 100.0%; height: 100.0%;">                 University of Bradford // Students:11520</div>                 ')[0];
+                popup_3c9b49e9cf7c41cbbe7d752dcf36afb9.setContent(html_b4a745ad416548e5b395fb6def0cfc3f);
+            
+
+            circle_marker_fb5635c3213349b89e8606f9b3e1ffca.bindPopup(popup_3c9b49e9cf7c41cbbe7d752dcf36afb9);
+
+            
+        
+        
+            
+
+            var circle_marker_2b490a1ed80b4ff8b3842f83ddb64949 = L.circle(
+                [50.842454,-0.11917],
+                5.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_4ba2fabc5fa24edf9af1d190c71fc37b = L.popup({maxWidth: '300'});
+
+            
+                var html_8f6d079e687e42d99b0baa71fa2e5f6a = $('         <div id="html_8f6d079e687e42d99b0baa71fa2e5f6a"                 style="width: 100.0%; height: 100.0%;">                 University of Brighton // Students:20685</div>                 ')[0];
+                popup_4ba2fabc5fa24edf9af1d190c71fc37b.setContent(html_8f6d079e687e42d99b0baa71fa2e5f6a);
+            
+
+            circle_marker_2b490a1ed80b4ff8b3842f83ddb64949.bindPopup(popup_4ba2fabc5fa24edf9af1d190c71fc37b);
+
+            
+        
+        
+            
+
+            var circle_marker_7600621cb7504d3db303c4fd5b1ba301 = L.circle(
+                [51.459066,-2.603291],
+                5.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_512d2ccb86954fc4af36f9b7c2783e14 = L.popup({maxWidth: '300'});
+
+            
+                var html_324bcfe54221436c804b6294b9c24bf3 = $('         <div id="html_324bcfe54221436c804b6294b9c24bf3"                 style="width: 100.0%; height: 100.0%;">                 University of Bristol // Students:21555</div>                 ')[0];
+                popup_512d2ccb86954fc4af36f9b7c2783e14.setContent(html_324bcfe54221436c804b6294b9c24bf3);
+            
+
+            circle_marker_7600621cb7504d3db303c4fd5b1ba301.bindPopup(popup_512d2ccb86954fc4af36f9b7c2783e14);
+
+            
+        
+        
+            
+
+            var circle_marker_5888abcf180b4521b21a4cacd56ea48c = L.circle(
+                [51.532838,-0.472856],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_f03a8da676eb48ba8d305a9b23998218 = L.popup({maxWidth: '300'});
+
+            
+                var html_6cf2d1d00d3c4090af38a98499fa6549 = $('         <div id="html_6cf2d1d00d3c4090af38a98499fa6549"                 style="width: 100.0%; height: 100.0%;">                 Brunel University London // Students:13720</div>                 ')[0];
+                popup_f03a8da676eb48ba8d305a9b23998218.setContent(html_6cf2d1d00d3c4090af38a98499fa6549);
+            
+
+            circle_marker_5888abcf180b4521b21a4cacd56ea48c.bindPopup(popup_f03a8da676eb48ba8d305a9b23998218);
+
+            
+        
+        
+            
+
+            var circle_marker_66c90b325e5e4c4694f39b35887504d6 = L.circle(
+                [51.995998,-0.991839],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_c5ab036be99a41cc975921fe7837f8c4 = L.popup({maxWidth: '300'});
+
+            
+                var html_c0aace986d704b7988b70bc604f6fe14 = $('         <div id="html_c0aace986d704b7988b70bc604f6fe14"                 style="width: 100.0%; height: 100.0%;">                 University of Buckingham // Students:2245</div>                 ')[0];
+                popup_c5ab036be99a41cc975921fe7837f8c4.setContent(html_c0aace986d704b7988b70bc604f6fe14);
+            
+
+            circle_marker_66c90b325e5e4c4694f39b35887504d6.bindPopup(popup_c5ab036be99a41cc975921fe7837f8c4);
+
+            
+        
+        
+            
+
+            var circle_marker_f8f3b71bfc824b468c7c16c1a184fa46 = L.circle(
+                [51.628497,-0.753097],
+                2.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_47de8236555b47c2988f5f392d3c8daf = L.popup({maxWidth: '300'});
+
+            
+                var html_e7bc0e67b34146868bedd9489ce7a3b7 = $('         <div id="html_e7bc0e67b34146868bedd9489ce7a3b7"                 style="width: 100.0%; height: 100.0%;">                 Buckinghamshire New University // Students:9035</div>                 ')[0];
+                popup_47de8236555b47c2988f5f392d3c8daf.setContent(html_e7bc0e67b34146868bedd9489ce7a3b7);
+            
+
+            circle_marker_f8f3b71bfc824b468c7c16c1a184fa46.bindPopup(popup_47de8236555b47c2988f5f392d3c8daf);
+
+            
+        
+        
+            
+
+            var circle_marker_02ef4e0e5bd44bae9394be190a4031a8 = L.circle(
+                [52.205296,0.117067],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_1755fba5a9ee4cacac597c6ed92374e6 = L.popup({maxWidth: '300'});
+
+            
+                var html_ca89bb3b2bc54ea391d9ea8d40a95cc9 = $('         <div id="html_ca89bb3b2bc54ea391d9ea8d40a95cc9"                 style="width: 100.0%; height: 100.0%;">                 University of Cambridge // Students:19515</div>                 ')[0];
+                popup_1755fba5a9ee4cacac597c6ed92374e6.setContent(html_ca89bb3b2bc54ea391d9ea8d40a95cc9);
+            
+
+            circle_marker_02ef4e0e5bd44bae9394be190a4031a8.bindPopup(popup_1755fba5a9ee4cacac597c6ed92374e6);
+
+            
+        
+        
+            
+
+            var circle_marker_9e9d1214993841a88f88d03e456bfbc0 = L.circle(
+                [51.490831,-0.181284],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_7cb86726d125416d81e59496821ceef6 = L.popup({maxWidth: '300'});
+
+            
+                var html_37eacde8688741619997c60e8035753c = $('         <div id="html_37eacde8688741619997c60e8035753c"                 style="width: 100.0%; height: 100.0%;">                 Institute of Cancer Research[c] // Students:300</div>                 ')[0];
+                popup_7cb86726d125416d81e59496821ceef6.setContent(html_37eacde8688741619997c60e8035753c);
+            
+
+            circle_marker_9e9d1214993841a88f88d03e456bfbc0.bindPopup(popup_7cb86726d125416d81e59496821ceef6);
+
+            
+        
+        
+            
+
+            var circle_marker_10d51aaf4e5d4c2c9386f270152f3fcd = L.circle(
+                [51.279643,1.089364],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_e01b776fb3df49be94084b0de4b08d38 = L.popup({maxWidth: '300'});
+
+            
+                var html_afadb96ed1eb4ca5afbfb11e8f2ba267 = $('         <div id="html_afadb96ed1eb4ca5afbfb11e8f2ba267"                 style="width: 100.0%; height: 100.0%;">                 Canterbury Christ Church University // Students:16020</div>                 ')[0];
+                popup_e01b776fb3df49be94084b0de4b08d38.setContent(html_afadb96ed1eb4ca5afbfb11e8f2ba267);
+            
+
+            circle_marker_10d51aaf4e5d4c2c9386f270152f3fcd.bindPopup(popup_e01b776fb3df49be94084b0de4b08d38);
+
+            
+        
+        
+            
+
+            var circle_marker_42c6342d78d64597b72237409d0e8276 = L.circle(
+                [51.489057,-3.179825],
+                7.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_da4592098dc54a8f8f7913cf5c53c6d5 = L.popup({maxWidth: '300'});
+
+            
+                var html_b8ecc15ab242462fb703229d6c2b41b6 = $('         <div id="html_b8ecc15ab242462fb703229d6c2b41b6"                 style="width: 100.0%; height: 100.0%;">                 Cardiff University // Students:30480</div>                 ')[0];
+                popup_da4592098dc54a8f8f7913cf5c53c6d5.setContent(html_b8ecc15ab242462fb703229d6c2b41b6);
+            
+
+            circle_marker_42c6342d78d64597b72237409d0e8276.bindPopup(popup_da4592098dc54a8f8f7913cf5c53c6d5);
+
+            
+        
+        
+            
+
+            var circle_marker_8585df8bec8d483d9a36a5b7e21df792 = L.circle(
+                [51.483608,-3.223624],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_a1e01efdb21e4fdeb25efe6a2ad1262e = L.popup({maxWidth: '300'});
+
+            
+                var html_b5fb5e6afd9b4ebcae11872c2322dcc4 = $('         <div id="html_b5fb5e6afd9b4ebcae11872c2322dcc4"                 style="width: 100.0%; height: 100.0%;">                 Cardiff Metropolitan University // Students:13670</div>                 ')[0];
+                popup_a1e01efdb21e4fdeb25efe6a2ad1262e.setContent(html_b5fb5e6afd9b4ebcae11872c2322dcc4);
+            
+
+            circle_marker_8585df8bec8d483d9a36a5b7e21df792.bindPopup(popup_a1e01efdb21e4fdeb25efe6a2ad1262e);
+
+            
+        
+        
+            
+
+            var circle_marker_84dd39943e2c48eba6faf6c8c2191b48 = L.circle(
+                [53.761338,-2.707384],
+                6.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_1da12f0d76194da0bae64eb9d3e3901f = L.popup({maxWidth: '300'});
+
+            
+                var html_abb356066abb45e09f43f5ab43a92a52 = $('         <div id="html_abb356066abb45e09f43f5ab43a92a52"                 style="width: 100.0%; height: 100.0%;">                 University of Central Lancashire // Students:25655</div>                 ')[0];
+                popup_1da12f0d76194da0bae64eb9d3e3901f.setContent(html_abb356066abb45e09f43f5ab43a92a52);
+            
+
+            circle_marker_84dd39943e2c48eba6faf6c8c2191b48.bindPopup(popup_1da12f0d76194da0bae64eb9d3e3901f);
+
+            
+        
+        
+            
+
+            var circle_marker_abf9f4b09acb4c27a9c13ca35aacc150 = L.circle(
+                [53.198641,-2.898061],
+                8.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_b3938442548b448198958fb8619783ba = L.popup({maxWidth: '300'});
+
+            
+                var html_86321fa21e7a401086dc247b9d211af2 = $('         <div id="html_86321fa21e7a401086dc247b9d211af2"                 style="width: 100.0%; height: 100.0%;">                 University of Manchester // Students:38590</div>                 ')[0];
+                popup_b3938442548b448198958fb8619783ba.setContent(html_86321fa21e7a401086dc247b9d211af2);
+            
+
+            circle_marker_abf9f4b09acb4c27a9c13ca35aacc150.bindPopup(popup_b3938442548b448198958fb8619783ba);
+
+            
+        
+        
+            
+
+            var circle_marker_dadfbcdeb4ef42b89d2000f53fcc3f78 = L.circle(
+                [50.84431,-0.77501],
+                2.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_41cf5b0230a14022a19482a8692a612c = L.popup({maxWidth: '300'});
+
+            
+                var html_75cf8d76ab3446efaad431c750e82ef8 = $('         <div id="html_75cf8d76ab3446efaad431c750e82ef8"                 style="width: 100.0%; height: 100.0%;">                 University of Chichester // Students:5445</div>                 ')[0];
+                popup_41cf5b0230a14022a19482a8692a612c.setContent(html_75cf8d76ab3446efaad431c750e82ef8);
+            
+
+            circle_marker_dadfbcdeb4ef42b89d2000f53fcc3f78.bindPopup(popup_41cf5b0230a14022a19482a8692a612c);
+
+            
+        
+        
+            
+
+            var circle_marker_483ea75b7fc44ba39e462e2d664eee3e = L.circle(
+                [51.526206,-0.129115],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_c8b46f1a1ac64281ac7d88188fc886f9 = L.popup({maxWidth: '300'});
+
+            
+                var html_e692df7198374cf1bf052af4b6f04372 = $('         <div id="html_e692df7198374cf1bf052af4b6f04372"                 style="width: 100.0%; height: 100.0%;">                 Conservatoire for Dance and Drama // Students:1260</div>                 ')[0];
+                popup_c8b46f1a1ac64281ac7d88188fc886f9.setContent(html_e692df7198374cf1bf052af4b6f04372);
+            
+
+            circle_marker_483ea75b7fc44ba39e462e2d664eee3e.bindPopup(popup_c8b46f1a1ac64281ac7d88188fc886f9);
+
+            
+        
+        
+            
+
+            var circle_marker_e70f96329d624ba4ad61202e54885f49 = L.circle(
+                [51.510732,-0.116938],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_e4977a781b1e4023add6af9f747f74dd = L.popup({maxWidth: '300'});
+
+            
+                var html_c7032800f2dd412faf356456da7e5475 = $('         <div id="html_c7032800f2dd412faf356456da7e5475"                 style="width: 100.0%; height: 100.0%;">                 Courtauld Institute of Art[c] // Students:470</div>                 ')[0];
+                popup_e4977a781b1e4023add6af9f747f74dd.setContent(html_c7032800f2dd412faf356456da7e5475);
+            
+
+            circle_marker_e70f96329d624ba4ad61202e54885f49.bindPopup(popup_e4977a781b1e4023add6af9f747f74dd);
+
+            
+        
+        
+            
+
+            var circle_marker_9c6b35baa29748538174b56f98703fa7 = L.circle(
+                [52.405314,-1.500063],
+                6.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_28a29622c51d45ae9b01fa09ab32299c = L.popup({maxWidth: '300'});
+
+            
+                var html_9354b03c801d42a79a393734e234e3f5 = $('         <div id="html_9354b03c801d42a79a393734e234e3f5"                 style="width: 100.0%; height: 100.0%;">                 Coventry University // Students:27600</div>                 ')[0];
+                popup_28a29622c51d45ae9b01fa09ab32299c.setContent(html_9354b03c801d42a79a393734e234e3f5);
+            
+
+            circle_marker_9c6b35baa29748538174b56f98703fa7.bindPopup(popup_28a29622c51d45ae9b01fa09ab32299c);
+
+            
+        
+        
+            
+
+            var circle_marker_0f5ef4ad13594915b01fb6fc1a2d3102 = L.circle(
+                [52.073918,-0.628755],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_49eb5268996b4aed8aaf5aa2d684e953 = L.popup({maxWidth: '300'});
+
+            
+                var html_9ab16bc1c52b4ba9b188f8e77f7f9f28 = $('         <div id="html_9ab16bc1c52b4ba9b188f8e77f7f9f28"                 style="width: 100.0%; height: 100.0%;">                 Cranfield University // Students:4150</div>                 ')[0];
+                popup_49eb5268996b4aed8aaf5aa2d684e953.setContent(html_9ab16bc1c52b4ba9b188f8e77f7f9f28);
+            
+
+            circle_marker_0f5ef4ad13594915b01fb6fc1a2d3102.bindPopup(popup_49eb5268996b4aed8aaf5aa2d684e953);
+
+            
+        
+        
+            
+
+            var circle_marker_22f5e21baeee491683eba92f4b2820da = L.circle(
+                [51.215684,-0.805973],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_754b1e8ca98f406a96e1a966f979d0be = L.popup({maxWidth: '300'});
+
+            
+                var html_b0eaf6b70b684c5bb734fb0539bd6bc8 = $('         <div id="html_b0eaf6b70b684c5bb734fb0539bd6bc8"                 style="width: 100.0%; height: 100.0%;">                 University for the Creative Arts // Students:4805</div>                 ')[0];
+                popup_754b1e8ca98f406a96e1a966f979d0be.setContent(html_b0eaf6b70b684c5bb734fb0539bd6bc8);
+            
+
+            circle_marker_22f5e21baeee491683eba92f4b2820da.bindPopup(popup_754b1e8ca98f406a96e1a966f979d0be);
+
+            
+        
+        
+            
+
+            var circle_marker_c0ebe1a9c96f420b80a72457c2e4cb47 = L.circle(
+                [54.891163,-2.921417],
+                2.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_260d4f079eb24ff78932b6e20b9caa29 = L.popup({maxWidth: '300'});
+
+            
+                var html_e89fb60a69d346508c1a1ba6115de29f = $('         <div id="html_e89fb60a69d346508c1a1ba6115de29f"                 style="width: 100.0%; height: 100.0%;">                 University of Cumbria // Students:9065</div>                 ')[0];
+                popup_260d4f079eb24ff78932b6e20b9caa29.setContent(html_e89fb60a69d346508c1a1ba6115de29f);
+            
+
+            circle_marker_c0ebe1a9c96f420b80a72457c2e4cb47.bindPopup(popup_260d4f079eb24ff78932b6e20b9caa29);
+
+            
+        
+        
+            
+
+            var circle_marker_30d59056bc834ca48cc2602c4b52a7cc = L.circle(
+                [52.629286,-1.137817],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_38f3fc696cbc4876a3626ab01c1247d9 = L.popup({maxWidth: '300'});
+
+            
+                var html_04a5d8c091084265a5fac7417c94c05f = $('         <div id="html_04a5d8c091084265a5fac7417c94c05f"                 style="width: 100.0%; height: 100.0%;">                 De Montfort University // Students:19650</div>                 ')[0];
+                popup_38f3fc696cbc4876a3626ab01c1247d9.setContent(html_04a5d8c091084265a5fac7417c94c05f);
+            
+
+            circle_marker_30d59056bc834ca48cc2602c4b52a7cc.bindPopup(popup_38f3fc696cbc4876a3626ab01c1247d9);
+
+            
+        
+        
+            
+
+            var circle_marker_b119b7cfb96e4facac1ba1603f7bf064 = L.circle(
+                [52.938527,-1.496681],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_6c6a9ab4d4ce4f97ae16f8501beacd6c = L.popup({maxWidth: '300'});
+
+            
+                var html_6413d127a9b64ea78dadbf78f9220a60 = $('         <div id="html_6413d127a9b64ea78dadbf78f9220a60"                 style="width: 100.0%; height: 100.0%;">                 University of Derby // Students:15935</div>                 ')[0];
+                popup_6c6a9ab4d4ce4f97ae16f8501beacd6c.setContent(html_6413d127a9b64ea78dadbf78f9220a60);
+            
+
+            circle_marker_b119b7cfb96e4facac1ba1603f7bf064.bindPopup(popup_6c6a9ab4d4ce4f97ae16f8501beacd6c);
+
+            
+        
+        
+            
+
+            var circle_marker_c060b3890eea4a1e91a2c75504781cf3 = L.circle(
+                [56.457345,-2.978269],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_c5c99b01ea154d6c822340782f35a5b6 = L.popup({maxWidth: '300'});
+
+            
+                var html_76bd7be13280442bb2af36f470a74a77 = $('         <div id="html_76bd7be13280442bb2af36f470a74a77"                 style="width: 100.0%; height: 100.0%;">                 University of Dundee // Students:15180</div>                 ')[0];
+                popup_c5c99b01ea154d6c822340782f35a5b6.setContent(html_76bd7be13280442bb2af36f470a74a77);
+            
+
+            circle_marker_c060b3890eea4a1e91a2c75504781cf3.bindPopup(popup_c5c99b01ea154d6c822340782f35a5b6);
+
+            
+        
+        
+            
+
+            var circle_marker_f76f2aeb1f694e5d9384ecce6c7318b6 = L.circle(
+                [54.768112,-1.571874],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_3aed9a1a6c334118a9a2d05efede035d = L.popup({maxWidth: '300'});
+
+            
+                var html_342804833d534ec195878a8e0df2ee43 = $('         <div id="html_342804833d534ec195878a8e0df2ee43"                 style="width: 100.0%; height: 100.0%;">                 University of Durham // Students:17595</div>                 ')[0];
+                popup_3aed9a1a6c334118a9a2d05efede035d.setContent(html_342804833d534ec195878a8e0df2ee43);
+            
+
+            circle_marker_f76f2aeb1f694e5d9384ecce6c7318b6.bindPopup(popup_3aed9a1a6c334118a9a2d05efede035d);
+
+            
+        
+        
+            
+
+            var circle_marker_d1b1745315f647f8a4d0153272ada9e8 = L.circle(
+                [52.622369,1.241391],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_70b5b63cd8d54c1883a805796fa4be35 = L.popup({maxWidth: '300'});
+
+            
+                var html_c9f3be16e8d54a9f986668f9372d9a06 = $('         <div id="html_c9f3be16e8d54a9f986668f9372d9a06"                 style="width: 100.0%; height: 100.0%;">                 University of East Anglia // Students:16265</div>                 ')[0];
+                popup_70b5b63cd8d54c1883a805796fa4be35.setContent(html_c9f3be16e8d54a9f986668f9372d9a06);
+            
+
+            circle_marker_d1b1745315f647f8a4d0153272ada9e8.bindPopup(popup_70b5b63cd8d54c1883a805796fa4be35);
+
+            
+        
+        
+            
+
+            var circle_marker_8fcf93eeb0c8420b9f917ff5c1330619 = L.circle(
+                [51.507485,0.064759],
+                33.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_d22bae7246c14e4da5dbf9fc9a4a9e42 = L.popup({maxWidth: '300'});
+
+            
+                var html_1564b215ba704d3782abc271993dc4ea = $('         <div id="html_1564b215ba704d3782abc271993dc4ea"                 style="width: 100.0%; height: 100.0%;">                 University of London[a] // Students:161270</div>                 ')[0];
+                popup_d22bae7246c14e4da5dbf9fc9a4a9e42.setContent(html_1564b215ba704d3782abc271993dc4ea);
+            
+
+            circle_marker_8fcf93eeb0c8420b9f917ff5c1330619.bindPopup(popup_d22bae7246c14e4da5dbf9fc9a4a9e42);
+
+            
+        
+        
+            
+
+            var circle_marker_a2dcef1ef72d485d86e1318828d19f5b = L.circle(
+                [53.559608,-2.873836],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_58e9febef2754a85bf6f4ba844f0fd8f = L.popup({maxWidth: '300'});
+
+            
+                var html_b220368a02174e79a0c586954913b7a6 = $('         <div id="html_b220368a02174e79a0c586954913b7a6"                 style="width: 100.0%; height: 100.0%;">                 Edge Hill University // Students:16170</div>                 ')[0];
+                popup_58e9febef2754a85bf6f4ba844f0fd8f.setContent(html_b220368a02174e79a0c586954913b7a6);
+            
+
+            circle_marker_a2dcef1ef72d485d86e1318828d19f5b.bindPopup(popup_58e9febef2754a85bf6f4ba844f0fd8f);
+
+            
+        
+        
+            
+
+            var circle_marker_5f36419a443d4dcc91bc51c76a284e4e = L.circle(
+                [55.947691,-3.187347],
+                6.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_0d8b108d2c0d479b85ae819c5e6dfbfe = L.popup({maxWidth: '300'});
+
+            
+                var html_f3b8db7f41464c80b540ddd3c63373d0 = $('         <div id="html_f3b8db7f41464c80b540ddd3c63373d0"                 style="width: 100.0%; height: 100.0%;">                 University of Edinburgh // Students:28880</div>                 ')[0];
+                popup_0d8b108d2c0d479b85ae819c5e6dfbfe.setContent(html_f3b8db7f41464c80b540ddd3c63373d0);
+            
+
+            circle_marker_5f36419a443d4dcc91bc51c76a284e4e.bindPopup(popup_0d8b108d2c0d479b85ae819c5e6dfbfe);
+
+            
+        
+        
+            
+
+            var circle_marker_3b80237a5477477b97cae72e3b36ea51 = L.circle(
+                [51.876715,0.946666],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_3cbb9f820acc4e1c96463cec747c0dbd = L.popup({maxWidth: '300'});
+
+            
+                var html_ff5ae2d867244498a24d634d1477e725 = $('         <div id="html_ff5ae2d867244498a24d634d1477e725"                 style="width: 100.0%; height: 100.0%;">                 University of Essex // Students:14435</div>                 ')[0];
+                popup_3cbb9f820acc4e1c96463cec747c0dbd.setContent(html_ff5ae2d867244498a24d634d1477e725);
+            
+
+            circle_marker_3b80237a5477477b97cae72e3b36ea51.bindPopup(popup_3cbb9f820acc4e1c96463cec747c0dbd);
+
+            
+        
+        
+            
+
+            var circle_marker_f2d39a7712f64b6d8580c74834dfc9b1 = L.circle(
+                [50.735156,-3.535048],
+                5.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_df9d5a355c9e4aceacf491b620a4beb1 = L.popup({maxWidth: '300'});
+
+            
+                var html_d2267b92516b41c68f3e39bc8e307a2a = $('         <div id="html_d2267b92516b41c68f3e39bc8e307a2a"                 style="width: 100.0%; height: 100.0%;">                 University of Exeter // Students:20555</div>                 ')[0];
+                popup_df9d5a355c9e4aceacf491b620a4beb1.setContent(html_d2267b92516b41c68f3e39bc8e307a2a);
+            
+
+            circle_marker_f2d39a7712f64b6d8580c74834dfc9b1.bindPopup(popup_df9d5a355c9e4aceacf491b620a4beb1);
+
+            
+        
+        
+            
+
+            var circle_marker_f4327a6a1a1b430999735c85f2679acb = L.circle(
+                [50.149625,-5.071079],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_889894f24c2644dba373110c646b16ee = L.popup({maxWidth: '300'});
+
+            
+                var html_c2ab628fa3874c649c07111af8880313 = $('         <div id="html_c2ab628fa3874c649c07111af8880313"                 style="width: 100.0%; height: 100.0%;">                 Falmouth University // Students:4280</div>                 ')[0];
+                popup_889894f24c2644dba373110c646b16ee.setContent(html_c2ab628fa3874c649c07111af8880313);
+            
+
+            circle_marker_f4327a6a1a1b430999735c85f2679acb.bindPopup(popup_889894f24c2644dba373110c646b16ee);
+
+            
+        
+        
+            
+
+            var circle_marker_f9907e0792a9405f954614b5b833be72 = L.circle(
+                [55.86729,-4.250057],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_4e723a6560fb410585c88900de849bfd = L.popup({maxWidth: '300'});
+
+            
+                var html_4f89d276c0784488bdc5b5f488628ee2 = $('         <div id="html_4f89d276c0784488bdc5b5f488628ee2"                 style="width: 100.0%; height: 100.0%;">                 Glasgow Caledonian University // Students:16930</div>                 ')[0];
+                popup_4e723a6560fb410585c88900de849bfd.setContent(html_4f89d276c0784488bdc5b5f488628ee2);
+            
+
+            circle_marker_f9907e0792a9405f954614b5b833be72.bindPopup(popup_4e723a6560fb410585c88900de849bfd);
+
+            
+        
+        
+            
+
+            var circle_marker_38feb14fb076440f903e392e2ca32d8a = L.circle(
+                [55.865958,-4.263405],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_7994488139f041dfa61867036855c2e0 = L.popup({maxWidth: '300'});
+
+            
+                var html_41847018f72d41438c53902e96672476 = $('         <div id="html_41847018f72d41438c53902e96672476"                 style="width: 100.0%; height: 100.0%;">                 Glasgow School of Art // Students:1840</div>                 ')[0];
+                popup_7994488139f041dfa61867036855c2e0.setContent(html_41847018f72d41438c53902e96672476);
+            
+
+            circle_marker_38feb14fb076440f903e392e2ca32d8a.bindPopup(popup_7994488139f041dfa61867036855c2e0);
+
+            
+        
+        
+            
+
+            var circle_marker_d674c6d0eafd4fe6a2b807ac44968fa8 = L.circle(
+                [55.871751,-4.28836],
+                6.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_a091e198a27d49e3a3dfbef85e2df1a2 = L.popup({maxWidth: '300'});
+
+            
+                var html_64d49a2caab340a6aebc8ef5f134c968 = $('         <div id="html_64d49a2caab340a6aebc8ef5f134c968"                 style="width: 100.0%; height: 100.0%;">                 University of Glasgow // Students:26815</div>                 ')[0];
+                popup_a091e198a27d49e3a3dfbef85e2df1a2.setContent(html_64d49a2caab340a6aebc8ef5f134c968);
+            
+
+            circle_marker_d674c6d0eafd4fe6a2b807ac44968fa8.bindPopup(popup_a091e198a27d49e3a3dfbef85e2df1a2);
+
+            
+        
+        
+            
+
+            var circle_marker_b8a3f59dce754336b7137c862a0ee2e3 = L.circle(
+                [51.887496,-2.088788],
+                2.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_4e3e78ae6e4d484095a7aa5a2e8dfeab = L.popup({maxWidth: '300'});
+
+            
+                var html_8802102ddfcc40cfa0f9ba752d8c6285 = $('         <div id="html_8802102ddfcc40cfa0f9ba752d8c6285"                 style="width: 100.0%; height: 100.0%;">                 University of Gloucestershire // Students:7855</div>                 ')[0];
+                popup_4e3e78ae6e4d484095a7aa5a2e8dfeab.setContent(html_8802102ddfcc40cfa0f9ba752d8c6285);
+            
+
+            circle_marker_b8a3f59dce754336b7137c862a0ee2e3.bindPopup(popup_4e3e78ae6e4d484095a7aa5a2e8dfeab);
+
+            
+        
+        
+            
+
+            var circle_marker_43698dbb168347ccb41e1c43cf88db94 = L.circle(
+                [53.052626,-3.006109],
+                2.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_61996bee99554e40a3b33cdb88237bf4 = L.popup({maxWidth: '300'});
+
+            
+                var html_5f7c0aded3ee48559b1fb9f1e732f42e = $('         <div id="html_5f7c0aded3ee48559b1fb9f1e732f42e"                 style="width: 100.0%; height: 100.0%;">                 Glyndŵr University // Students:6765</div>                 ')[0];
+                popup_61996bee99554e40a3b33cdb88237bf4.setContent(html_5f7c0aded3ee48559b1fb9f1e732f42e);
+            
+
+            circle_marker_43698dbb168347ccb41e1c43cf88db94.bindPopup(popup_61996bee99554e40a3b33cdb88237bf4);
+
+            
+        
+        
+            
+
+            var circle_marker_3f0b83356a98438bb44a5b464a1ef5e0 = L.circle(
+                [51.474144,-0.035401],
+                2.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_ca85a039fe16444aa4fa5d856d5ec5cf = L.popup({maxWidth: '300'});
+
+            
+                var html_bf5a24fff9d54f8c8998f812cf3ddaf5 = $('         <div id="html_bf5a24fff9d54f8c8998f812cf3ddaf5"                 style="width: 100.0%; height: 100.0%;">                 Goldsmiths College[c] // Students:8165</div>                 ')[0];
+                popup_ca85a039fe16444aa4fa5d856d5ec5cf.setContent(html_bf5a24fff9d54f8c8998f812cf3ddaf5);
+            
+
+            circle_marker_3f0b83356a98438bb44a5b464a1ef5e0.bindPopup(popup_ca85a039fe16444aa4fa5d856d5ec5cf);
+
+            
+        
+        
+            
+
+            var circle_marker_24fccde8cc4c40b3ac92e9bc1defb4e4 = L.circle(
+                [51.484468,-0.004005],
+                5.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_6e4110b2b77a44a7b3085eb30eb47685 = L.popup({maxWidth: '300'});
+
+            
+                var html_68428736202147a0b7c515f217dffab9 = $('         <div id="html_68428736202147a0b7c515f217dffab9"                 style="width: 100.0%; height: 100.0%;">                 University of Greenwich // Students:21295</div>                 ')[0];
+                popup_6e4110b2b77a44a7b3085eb30eb47685.setContent(html_68428736202147a0b7c515f217dffab9);
+            
+
+            circle_marker_24fccde8cc4c40b3ac92e9bc1defb4e4.bindPopup(popup_6e4110b2b77a44a7b3085eb30eb47685);
+
+            
+        
+        
+            
+
+            var circle_marker_c22485ca81c049059d2703ccf8b6d44b = L.circle(
+                [51.519517,-0.092374],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_8acd2f18a106484d811ba5e099079286 = L.popup({maxWidth: '300'});
+
+            
+                var html_ba38d36b77684c2e84cc14e57698606e = $('         <div id="html_ba38d36b77684c2e84cc14e57698606e"                 style="width: 100.0%; height: 100.0%;">                 Guildhall School of Music and Drama // Students:905</div>                 ')[0];
+                popup_8acd2f18a106484d811ba5e099079286.setContent(html_ba38d36b77684c2e84cc14e57698606e);
+            
+
+            circle_marker_c22485ca81c049059d2703ccf8b6d44b.bindPopup(popup_8acd2f18a106484d811ba5e099079286);
+
+            
+        
+        
+            
+
+            var circle_marker_411d73d894ab4943821754e4ab67db37 = L.circle(
+                [52.779896,-2.425558],
+                2.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_20b6b2b9984a4e96a8ce5651e1123c71 = L.popup({maxWidth: '300'});
+
+            
+                var html_fa604e5ce96a4b74ae169b37725d6b62 = $('         <div id="html_fa604e5ce96a4b74ae169b37725d6b62"                 style="width: 100.0%; height: 100.0%;">                 Harper Adams University // Students:5045</div>                 ')[0];
+                popup_20b6b2b9984a4e96a8ce5651e1123c71.setContent(html_fa604e5ce96a4b74ae169b37725d6b62);
+            
+
+            circle_marker_411d73d894ab4943821754e4ab67db37.bindPopup(popup_20b6b2b9984a4e96a8ce5651e1123c71);
+
+            
+        
+        
+            
+
+            var circle_marker_33bf09356dee42768b02a421952ea361 = L.circle(
+                [55.909385,-3.320682],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_ea72ffd28e9249079b38afad39a467f5 = L.popup({maxWidth: '300'});
+
+            
+                var html_341cee2c93494e099d26b063f4930374 = $('         <div id="html_341cee2c93494e099d26b063f4930374"                 style="width: 100.0%; height: 100.0%;">                 Heriot-Watt University // Students:10705</div>                 ')[0];
+                popup_ea72ffd28e9249079b38afad39a467f5.setContent(html_341cee2c93494e099d26b063f4930374);
+            
+
+            circle_marker_33bf09356dee42768b02a421952ea361.bindPopup(popup_ea72ffd28e9249079b38afad39a467f5);
+
+            
+        
+        
+            
+
+            var circle_marker_59fddae4281b4208b43c20b74fc2159a = L.circle(
+                [51.753128,-0.240975],
+                5.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_b7e90db220c546029a9badb3501e6dc8 = L.popup({maxWidth: '300'});
+
+            
+                var html_5d7ad827bd904af3ad768d2edd1ed615 = $('         <div id="html_5d7ad827bd904af3ad768d2edd1ed615"                 style="width: 100.0%; height: 100.0%;">                 University of Hertfordshire // Students:24880</div>                 ')[0];
+                popup_b7e90db220c546029a9badb3501e6dc8.setContent(html_5d7ad827bd904af3ad768d2edd1ed615);
+            
+
+            circle_marker_59fddae4281b4208b43c20b74fc2159a.bindPopup(popup_b7e90db220c546029a9badb3501e6dc8);
+
+            
+        
+        
+            
+
+            var circle_marker_3cb787672ebe4a1bbcf7c81fcfd0f6a7 = L.circle(
+                [51.499883,-0.190908],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_57bb7333984e455f91bd7b5ae3966768 = L.popup({maxWidth: '300'});
+
+            
+                var html_0d00acafb3964104beaa43fe9c054466 = $('         <div id="html_0d00acafb3964104beaa43fe9c054466"                 style="width: 100.0%; height: 100.0%;">                 Heythrop College[c] // Students:700</div>                 ')[0];
+                popup_57bb7333984e455f91bd7b5ae3966768.setContent(html_0d00acafb3964104beaa43fe9c054466);
+            
+
+            circle_marker_3cb787672ebe4a1bbcf7c81fcfd0f6a7.bindPopup(popup_57bb7333984e455f91bd7b5ae3966768);
+
+            
+        
+        
+            
+
+            var circle_marker_07169b2265c8458c8c5f04aa39d794fd = L.circle(
+                [53.643723,-1.776864],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_c7950c5b77b54a719f10be5a9ec78afd = L.popup({maxWidth: '300'});
+
+            
+                var html_28b805239ad54a6380d26c2af469b40b = $('         <div id="html_28b805239ad54a6380d26c2af469b40b"                 style="width: 100.0%; height: 100.0%;">                 University of Huddersfield // Students:19620</div>                 ')[0];
+                popup_c7950c5b77b54a719f10be5a9ec78afd.setContent(html_28b805239ad54a6380d26c2af469b40b);
+            
+
+            circle_marker_07169b2265c8458c8c5f04aa39d794fd.bindPopup(popup_c7950c5b77b54a719f10be5a9ec78afd);
+
+            
+        
+        
+            
+
+            var circle_marker_b73797d37d644572ad42c9cad99e672b = L.circle(
+                [53.771778,-0.366384],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_8e19e9b599fa4f6a9e60a7d3ce6bacaf = L.popup({maxWidth: '300'});
+
+            
+                var html_62e3ca29d71746cbba94623f543198db = $('         <div id="html_62e3ca29d71746cbba94623f543198db"                 style="width: 100.0%; height: 100.0%;">                 University of Hull // Students:17010</div>                 ')[0];
+                popup_8e19e9b599fa4f6a9e60a7d3ce6bacaf.setContent(html_62e3ca29d71746cbba94623f543198db);
+            
+
+            circle_marker_b73797d37d644572ad42c9cad99e672b.bindPopup(popup_8e19e9b599fa4f6a9e60a7d3ce6bacaf);
+
+            
+        
+        
+            
+
+            var circle_marker_3ab5c7185ebe4253a12fa3b47e092025 = L.circle(
+                [53.003262,-2.273581],
+                2.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_14622579262e42d789dee9aa5d2b73b4 = L.popup({maxWidth: '300'});
+
+            
+                var html_3b4f0a5dd6b54078b4a808fdd203de20 = $('         <div id="html_3b4f0a5dd6b54078b4a808fdd203de20"                 style="width: 100.0%; height: 100.0%;">                 University of Keele // Students:9635</div>                 ')[0];
+                popup_14622579262e42d789dee9aa5d2b73b4.setContent(html_3b4f0a5dd6b54078b4a808fdd203de20);
+            
+
+            circle_marker_3ab5c7185ebe4253a12fa3b47e092025.bindPopup(popup_14622579262e42d789dee9aa5d2b73b4);
+
+            
+        
+        
+            
+
+            var circle_marker_bb3e05f64cbf4accba64c0cb571531a8 = L.circle(
+                [51.298503,1.070975],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_19d6f281dd354262828d9b0d0b841952 = L.popup({maxWidth: '300'});
+
+            
+                var html_efb60dee3d8d4b6fa31aa99faeca9cfc = $('         <div id="html_efb60dee3d8d4b6fa31aa99faeca9cfc"                 style="width: 100.0%; height: 100.0%;">                 University of Kent // Students:18985</div>                 ')[0];
+                popup_19d6f281dd354262828d9b0d0b841952.setContent(html_efb60dee3d8d4b6fa31aa99faeca9cfc);
+            
+
+            circle_marker_bb3e05f64cbf4accba64c0cb571531a8.bindPopup(popup_19d6f281dd354262828d9b0d0b841952);
+
+            
+        
+        
+            
+
+            var circle_marker_177e659f063549efaea054782f8d75c5 = L.circle(
+                [51.511612,-0.116253],
+                6.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_feada451b4964b288ed6c738ca743d7b = L.popup({maxWidth: '300'});
+
+            
+                var html_f308ece751ae4d8fbc9a28bd553ce9de = $('         <div id="html_f308ece751ae4d8fbc9a28bd553ce9de"                 style="width: 100.0%; height: 100.0%;">                 King&#39;s College London[c] // Students:28730</div>                 ')[0];
+                popup_feada451b4964b288ed6c738ca743d7b.setContent(html_f308ece751ae4d8fbc9a28bd553ce9de);
+            
+
+            circle_marker_177e659f063549efaea054782f8d75c5.bindPopup(popup_feada451b4964b288ed6c738ca743d7b);
+
+            
+        
+        
+            
+
+            var circle_marker_45a65afb243b46e68d755420344cbdf6 = L.circle(
+                [51.406309,-0.30786],
+                5.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_72b6f30d69db4d0fa73e4c77a9465ca0 = L.popup({maxWidth: '300'});
+
+            
+                var html_621955adb7b348ab966c24d67ec817cd = $('         <div id="html_621955adb7b348ab966c24d67ec817cd"                 style="width: 100.0%; height: 100.0%;">                 Kingston University // Students:21915</div>                 ')[0];
+                popup_72b6f30d69db4d0fa73e4c77a9465ca0.setContent(html_621955adb7b348ab966c24d67ec817cd);
+            
+
+            circle_marker_45a65afb243b46e68d755420344cbdf6.bindPopup(popup_72b6f30d69db4d0fa73e4c77a9465ca0);
+
+            
+        
+        
+            
+
+            var circle_marker_a9bdc62df3034fb1b83e1ba6f9024299 = L.circle(
+                [53.808429,-1.551775],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_4310b3106bfe4a239334258393bcd128 = L.popup({maxWidth: '300'});
+
+            
+                var html_b928b0f7ed3a406bb5b4a652e9519ad0 = $('         <div id="html_b928b0f7ed3a406bb5b4a652e9519ad0"                 style="width: 100.0%; height: 100.0%;">                 Leeds College of Art // Students:1170</div>                 ')[0];
+                popup_4310b3106bfe4a239334258393bcd128.setContent(html_b928b0f7ed3a406bb5b4a652e9519ad0);
+            
+
+            circle_marker_a9bdc62df3034fb1b83e1ba6f9024299.bindPopup(popup_4310b3106bfe4a239334258393bcd128);
+
+            
+        
+        
+            
+
+            var circle_marker_32def674a17f479399843065f0838e1c = L.circle(
+                [51.858361,-4.328713],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_b1d3a38910964440ad048d1d324071de = L.popup({maxWidth: '300'});
+
+            
+                var html_9079b6076be24bd6b1f3e540c15ebead = $('         <div id="html_9079b6076be24bd6b1f3e540c15ebead"                 style="width: 100.0%; height: 100.0%;">                 University of Wales, Trinity Saint David // Students:10425</div>                 ')[0];
+                popup_b1d3a38910964440ad048d1d324071de.setContent(html_9079b6076be24bd6b1f3e540c15ebead);
+            
+
+            circle_marker_32def674a17f479399843065f0838e1c.bindPopup(popup_b1d3a38910964440ad048d1d324071de);
+
+            
+        
+        
+            
+
+            var circle_marker_ee5fb609460c41838c21cc135cbed1ae = L.circle(
+                [54.010418,-2.786451],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_980b5a5b8bcf4dec8865fc030359641c = L.popup({maxWidth: '300'});
+
+            
+                var html_d2a725eb408741ef88cc7f1591833b17 = $('         <div id="html_d2a725eb408741ef88cc7f1591833b17"                 style="width: 100.0%; height: 100.0%;">                 Lancaster University // Students:12965</div>                 ')[0];
+                popup_980b5a5b8bcf4dec8865fc030359641c.setContent(html_d2a725eb408741ef88cc7f1591833b17);
+            
+
+            circle_marker_ee5fb609460c41838c21cc135cbed1ae.bindPopup(popup_980b5a5b8bcf4dec8865fc030359641c);
+
+            
+        
+        
+            
+
+            var circle_marker_dd08c3ed75854ceeab2d3e9d207ac3fc = L.circle(
+                [53.826337,-1.59075],
+                6.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_e9543d90054f4fcaafe4c8e173375c29 = L.popup({maxWidth: '300'});
+
+            
+                var html_d9e662dc2f6c44999f28f26cba580c7c = $('         <div id="html_d9e662dc2f6c44999f28f26cba580c7c"                 style="width: 100.0%; height: 100.0%;">                 Leeds Beckett University // Students:26025</div>                 ')[0];
+                popup_e9543d90054f4fcaafe4c8e173375c29.setContent(html_d9e662dc2f6c44999f28f26cba580c7c);
+            
+
+            circle_marker_dd08c3ed75854ceeab2d3e9d207ac3fc.bindPopup(popup_e9543d90054f4fcaafe4c8e173375c29);
+
+            
+        
+        
+            
+
+            var circle_marker_4aced990ddcd42618b5e3b6d2a73b4f8 = L.circle(
+                [53.84878,-1.64735],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_4c1a153ca608420a884caac1b26b69e8 = L.popup({maxWidth: '300'});
+
+            
+                var html_8e7465eb16114812a5d8a12d82fa6c45 = $('         <div id="html_8e7465eb16114812a5d8a12d82fa6c45"                 style="width: 100.0%; height: 100.0%;">                 Leeds Trinity University // Students:3505</div>                 ')[0];
+                popup_4c1a153ca608420a884caac1b26b69e8.setContent(html_8e7465eb16114812a5d8a12d82fa6c45);
+            
+
+            circle_marker_4aced990ddcd42618b5e3b6d2a73b4f8.bindPopup(popup_4c1a153ca608420a884caac1b26b69e8);
+
+            
+        
+        
+            
+
+            var circle_marker_9b3d834215684947a68978ea1ffe5618 = L.circle(
+                [53.807958,-1.553329],
+                7.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_8f634317779643b7809e885974f55dab = L.popup({maxWidth: '300'});
+
+            
+                var html_b2aa2b66dda5423d8bef3138c9a0aef1 = $('         <div id="html_b2aa2b66dda5423d8bef3138c9a0aef1"                 style="width: 100.0%; height: 100.0%;">                 University of Leeds // Students:31030</div>                 ')[0];
+                popup_8f634317779643b7809e885974f55dab.setContent(html_b2aa2b66dda5423d8bef3138c9a0aef1);
+            
+
+            circle_marker_9b3d834215684947a68978ea1ffe5618.bindPopup(popup_8f634317779643b7809e885974f55dab);
+
+            
+        
+        
+            
+
+            var circle_marker_325c26e40bf9475e81978ac011e2dfbe = L.circle(
+                [52.622086,-1.124531],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_ca6b4506b4e3427d9d8e0b56bc6e01f4 = L.popup({maxWidth: '300'});
+
+            
+                var html_1ee6c80b03584bf7b23a650e77e2b7fb = $('         <div id="html_1ee6c80b03584bf7b23a650e77e2b7fb"                 style="width: 100.0%; height: 100.0%;">                 University of Leicester // Students:17995</div>                 ')[0];
+                popup_ca6b4506b4e3427d9d8e0b56bc6e01f4.setContent(html_1ee6c80b03584bf7b23a650e77e2b7fb);
+            
+
+            circle_marker_325c26e40bf9475e81978ac011e2dfbe.bindPopup(popup_ca6b4506b4e3427d9d8e0b56bc6e01f4);
+
+            
+        
+        
+            
+
+            var circle_marker_b5370547db294b00b342a05b7acac3f8 = L.circle(
+                [53.228709,-0.548641],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_17c958168fe649fe8739e435dfa70284 = L.popup({maxWidth: '300'});
+
+            
+                var html_8dede277676b408aaf495ea6fcfffb76 = $('         <div id="html_8dede277676b408aaf495ea6fcfffb76"                 style="width: 100.0%; height: 100.0%;">                 University of Lincoln // Students:13265</div>                 ')[0];
+                popup_17c958168fe649fe8739e435dfa70284.setContent(html_8dede277676b408aaf495ea6fcfffb76);
+            
+
+            circle_marker_b5370547db294b00b342a05b7acac3f8.bindPopup(popup_17c958168fe649fe8739e435dfa70284);
+
+            
+        
+        
+            
+
+            var circle_marker_006662fcf0324e48b49526acb354b836 = L.circle(
+                [53.391475,-2.891936],
+                2.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_5287e1c8a0e344908bdcefc7ff1884e1 = L.popup({maxWidth: '300'});
+
+            
+                var html_47e03d605bd54bd6aa16762eac752417 = $('         <div id="html_47e03d605bd54bd6aa16762eac752417"                 style="width: 100.0%; height: 100.0%;">                 Liverpool Hope University // Students:5550</div>                 ')[0];
+                popup_5287e1c8a0e344908bdcefc7ff1884e1.setContent(html_47e03d605bd54bd6aa16762eac752417);
+            
+
+            circle_marker_006662fcf0324e48b49526acb354b836.bindPopup(popup_5287e1c8a0e344908bdcefc7ff1884e1);
+
+            
+        
+        
+            
+
+            var circle_marker_30ae18d2bac340d794a98be0f8f48cee = L.circle(
+                [53.399657,-2.972271],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_ef387f69fd2144d28aec0e9e8c16e596 = L.popup({maxWidth: '300'});
+
+            
+                var html_5238d4a95e3444fd81e73714f83ee0fc = $('         <div id="html_5238d4a95e3444fd81e73714f83ee0fc"                 style="width: 100.0%; height: 100.0%;">                 The Liverpool Institute for Performing Arts // Students:715</div>                 ')[0];
+                popup_ef387f69fd2144d28aec0e9e8c16e596.setContent(html_5238d4a95e3444fd81e73714f83ee0fc);
+            
+
+            circle_marker_30ae18d2bac340d794a98be0f8f48cee.bindPopup(popup_ef387f69fd2144d28aec0e9e8c16e596);
+
+            
+        
+        
+            
+
+            var circle_marker_22a7503a105648bf997329cc4eb7f48a = L.circle(
+                [53.403685,-2.973176],
+                5.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_b60cac782b3d4c71b394ed0079f2727d = L.popup({maxWidth: '300'});
+
+            
+                var html_3f40ee80dc38423eaa106affe8c8273c = $('         <div id="html_3f40ee80dc38423eaa106affe8c8273c"                 style="width: 100.0%; height: 100.0%;">                 Liverpool John Moores University // Students:20635</div>                 ')[0];
+                popup_b60cac782b3d4c71b394ed0079f2727d.setContent(html_3f40ee80dc38423eaa106affe8c8273c);
+            
+
+            circle_marker_22a7503a105648bf997329cc4eb7f48a.bindPopup(popup_b60cac782b3d4c71b394ed0079f2727d);
+
+            
+        
+        
+            
+
+            var circle_marker_20991599954c469a8a8c6c106a076fc8 = L.circle(
+                [53.380314,-2.976431],
+                5.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_48acb9ccdc70433eab553f1dfed17d2c = L.popup({maxWidth: '300'});
+
+            
+                var html_c0837416e2534d7ea48801d092f4920d = $('         <div id="html_c0837416e2534d7ea48801d092f4920d"                 style="width: 100.0%; height: 100.0%;">                 University of Liverpool // Students:22715</div>                 ')[0];
+                popup_48acb9ccdc70433eab553f1dfed17d2c.setContent(html_c0837416e2534d7ea48801d092f4920d);
+            
+
+            circle_marker_20991599954c469a8a8c6c106a076fc8.bindPopup(popup_48acb9ccdc70433eab553f1dfed17d2c);
+
+            
+        
+        
+            
+
+            var circle_marker_8bbabbbbfabb43be8c2985cedee5a0a4 = L.circle(
+                [51.526581,-0.161378],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_fb5ea01db22041aa9c5c80b2fb27c48f = L.popup({maxWidth: '300'});
+
+            
+                var html_721a28ed028348f8aa102e081943dfac = $('         <div id="html_721a28ed028348f8aa102e081943dfac"                 style="width: 100.0%; height: 100.0%;">                 London Business School[c] // Students:1790</div>                 ')[0];
+                popup_fb5ea01db22041aa9c5c80b2fb27c48f.setContent(html_721a28ed028348f8aa102e081943dfac);
+            
+
+            circle_marker_8bbabbbbfabb43be8c2985cedee5a0a4.bindPopup(popup_fb5ea01db22041aa9c5c80b2fb27c48f);
+
+            
+        
+        
+            
+
+            var circle_marker_cfe08ef2156e4e808b71c45ab60dc5cd = L.circle(
+                [51.520642,-0.128724],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_4eb2f20baf544c3184b8c64fb8777896 = L.popup({maxWidth: '300'});
+
+            
+                var html_ca5a150010ba4d538966365f5dbac407 = $('         <div id="html_ca5a150010ba4d538966365f5dbac407"                 style="width: 100.0%; height: 100.0%;">                 University of London (Institutes and activities) // Students:235</div>                 ')[0];
+                popup_4eb2f20baf544c3184b8c64fb8777896.setContent(html_ca5a150010ba4d538966365f5dbac407);
+            
+
+            circle_marker_cfe08ef2156e4e808b71c45ab60dc5cd.bindPopup(popup_4eb2f20baf544c3184b8c64fb8777896);
+
+            
+        
+        
+            
+
+            var circle_marker_ca734d4a19b7478d8aaf4e6ead41b29b = L.circle(
+                [51.551471,-0.110381],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_ff0823278e7c425c97319b6761ee11a2 = L.popup({maxWidth: '300'});
+
+            
+                var html_a671f4bfda254781bb645c94903376fb = $('         <div id="html_a671f4bfda254781bb645c94903376fb"                 style="width: 100.0%; height: 100.0%;">                 London Metropolitan University // Students:14085</div>                 ')[0];
+                popup_ff0823278e7c425c97319b6761ee11a2.setContent(html_a671f4bfda254781bb645c94903376fb);
+            
+
+            circle_marker_ca734d4a19b7478d8aaf4e6ead41b29b.bindPopup(popup_ff0823278e7c425c97319b6761ee11a2);
+
+            
+        
+        
+            
+
+            var circle_marker_f7e795e13a9549358b2ea693295cf052 = L.circle(
+                [51.514114,-0.116971],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_10379dcd8a2e4f088a128a16860da4b3 = L.popup({maxWidth: '300'});
+
+            
+                var html_297a15cecbad4e54a534c41792d981e2 = $('         <div id="html_297a15cecbad4e54a534c41792d981e2"                 style="width: 100.0%; height: 100.0%;">                 London School of Economics[c] // Students:10600</div>                 ')[0];
+                popup_10379dcd8a2e4f088a128a16860da4b3.setContent(html_297a15cecbad4e54a534c41792d981e2);
+            
+
+            circle_marker_f7e795e13a9549358b2ea693295cf052.bindPopup(popup_10379dcd8a2e4f088a128a16860da4b3);
+
+            
+        
+        
+            
+
+            var circle_marker_b9197ff9ace74e5299a33a588400c988 = L.circle(
+                [51.520925,-0.130687],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_dbbd56b90acd4ca4998cdb7d267dc700 = L.popup({maxWidth: '300'});
+
+            
+                var html_791896cb3ae14a49a82bcdcb31bdee65 = $('         <div id="html_791896cb3ae14a49a82bcdcb31bdee65"                 style="width: 100.0%; height: 100.0%;">                 London School of Hygiene and Tropical Medicine[c] // Students:1245</div>                 ')[0];
+                popup_dbbd56b90acd4ca4998cdb7d267dc700.setContent(html_791896cb3ae14a49a82bcdcb31bdee65);
+            
+
+            circle_marker_b9197ff9ace74e5299a33a588400c988.bindPopup(popup_dbbd56b90acd4ca4998cdb7d267dc700);
+
+            
+        
+        
+            
+
+            var circle_marker_36189b5aebb24b0699c0536744eb90d4 = L.circle(
+                [51.517765,-0.116388],
+                33.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_60c3cd07a93442ca92e064291313ee8a = L.popup({maxWidth: '300'});
+
+            
+                var html_3ec6c8af682441c4b94c7acbe38f43c4 = $('         <div id="html_3ec6c8af682441c4b94c7acbe38f43c4"                 style="width: 100.0%; height: 100.0%;">                 University of London[a] // Students:161270</div>                 ')[0];
+                popup_60c3cd07a93442ca92e064291313ee8a.setContent(html_3ec6c8af682441c4b94c7acbe38f43c4);
+            
+
+            circle_marker_36189b5aebb24b0699c0536744eb90d4.bindPopup(popup_60c3cd07a93442ca92e064291313ee8a);
+
+            
+        
+        
+            
+
+            var circle_marker_149408e5635842e6aa6ddbb4d6aea0bf = L.circle(
+                [52.764828,-1.22952],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_714682444556437d833ae2c69bb3bb45 = L.popup({maxWidth: '300'});
+
+            
+                var html_db0ba68464864274bef2b85eaa74edce = $('         <div id="html_db0ba68464864274bef2b85eaa74edce"                 style="width: 100.0%; height: 100.0%;">                 Loughborough University // Students:15590</div>                 ')[0];
+                popup_714682444556437d833ae2c69bb3bb45.setContent(html_db0ba68464864274bef2b85eaa74edce);
+            
+
+            circle_marker_149408e5635842e6aa6ddbb4d6aea0bf.bindPopup(popup_714682444556437d833ae2c69bb3bb45);
+
+            
+        
+        
+            
+
+            var circle_marker_52aa71137d2f4ebd8e48be317d1a3dd7 = L.circle(
+                [53.470917,-2.239115],
+                8.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_686ade059e7c47429c38da4031b0e8c1 = L.popup({maxWidth: '300'});
+
+            
+                var html_1a7dfc91ec284f8bae601f5d7c45d214 = $('         <div id="html_1a7dfc91ec284f8bae601f5d7c45d214"                 style="width: 100.0%; height: 100.0%;">                 University of Manchester // Students:38590</div>                 ')[0];
+                popup_686ade059e7c47429c38da4031b0e8c1.setContent(html_1a7dfc91ec284f8bae601f5d7c45d214);
+            
+
+            circle_marker_52aa71137d2f4ebd8e48be317d1a3dd7.bindPopup(popup_686ade059e7c47429c38da4031b0e8c1);
+
+            
+        
+        
+            
+
+            var circle_marker_a728e1964965402b9193590e8287b9c3 = L.circle(
+                [53.467926,-2.233224],
+                8.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_f9315eb7b082426a9c22f55263dda48c = L.popup({maxWidth: '300'});
+
+            
+                var html_ede1539ad94a48469212dd78c64b1279 = $('         <div id="html_ede1539ad94a48469212dd78c64b1279"                 style="width: 100.0%; height: 100.0%;">                 University of Manchester // Students:38590</div>                 ')[0];
+                popup_f9315eb7b082426a9c22f55263dda48c.setContent(html_ede1539ad94a48469212dd78c64b1279);
+            
+
+            circle_marker_a728e1964965402b9193590e8287b9c3.bindPopup(popup_f9315eb7b082426a9c22f55263dda48c);
+
+            
+        
+        
+            
+
+            var circle_marker_04401c0febcf43d99938b908b426ba09 = L.circle(
+                [51.589826,-0.229909],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_ca95c021b6e44176b856ec93012547b1 = L.popup({maxWidth: '300'});
+
+            
+                var html_4454dfae69f0455a8e77714171591740 = $('         <div id="html_4454dfae69f0455a8e77714171591740"                 style="width: 100.0%; height: 100.0%;">                 Middlesex University // Students:17480</div>                 ')[0];
+                popup_ca95c021b6e44176b856ec93012547b1.setContent(html_4454dfae69f0455a8e77714171591740);
+            
+
+            circle_marker_04401c0febcf43d99938b908b426ba09.bindPopup(popup_ca95c021b6e44176b856ec93012547b1);
+
+            
+        
+        
+            
+
+            var circle_marker_88553aa09fc84f269e18edff04a7a2c4 = L.circle(
+                [55.91805,-3.24006],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_76d615d80de24457ba83f874643a4d88 = L.popup({maxWidth: '300'});
+
+            
+                var html_a3bab823a70e49cebe88cbac70ed624c = $('         <div id="html_a3bab823a70e49cebe88cbac70ed624c"                 style="width: 100.0%; height: 100.0%;">                 Edinburgh Napier University // Students:13125</div>                 ')[0];
+                popup_76d615d80de24457ba83f874643a4d88.setContent(html_a3bab823a70e49cebe88cbac70ed624c);
+            
+
+            circle_marker_88553aa09fc84f269e18edff04a7a2c4.bindPopup(popup_76d615d80de24457ba83f874643a4d88);
+
+            
+        
+        
+            
+
+            var circle_marker_66845492583b4dd59f2c79f51514c9f7 = L.circle(
+                [54.98032,-1.615713],
+                5.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_f9bd8e2aa3a94156bc07aef3a7c1dd46 = L.popup({maxWidth: '300'});
+
+            
+                var html_03807b96243b409aab1d931d4d6f5b43 = $('         <div id="html_03807b96243b409aab1d931d4d6f5b43"                 style="width: 100.0%; height: 100.0%;">                 Newcastle University // Students:23110</div>                 ')[0];
+                popup_f9bd8e2aa3a94156bc07aef3a7c1dd46.setContent(html_03807b96243b409aab1d931d4d6f5b43);
+            
+
+            circle_marker_66845492583b4dd59f2c79f51514c9f7.bindPopup(popup_f9bd8e2aa3a94156bc07aef3a7c1dd46);
+
+            
+        
+        
+            
+
+            var circle_marker_87d8d83e3ec2485cae0f3a217db8b8f8 = L.circle(
+                [52.434122,-1.995028],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_06a01a6fcf4c4876bb37bac1b4d5365f = L.popup({maxWidth: '300'});
+
+            
+                var html_b918b65ebd8c431a9b0c76fb5b775f32 = $('         <div id="html_b918b65ebd8c431a9b0c76fb5b775f32"                 style="width: 100.0%; height: 100.0%;">                 Newman University // Students:2725</div>                 ')[0];
+                popup_06a01a6fcf4c4876bb37bac1b4d5365f.setContent(html_b918b65ebd8c431a9b0c76fb5b775f32);
+            
+
+            circle_marker_87d8d83e3ec2485cae0f3a217db8b8f8.bindPopup(popup_06a01a6fcf4c4876bb37bac1b4d5365f);
+
+            
+        
+        
+            
+
+            var circle_marker_e2231e4eaedc4d249c561647bea4a777 = L.circle(
+                [52.271992,-0.883103],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_4fd23c4533eb44b3b9aea4e8d954bade = L.popup({maxWidth: '300'});
+
+            
+                var html_15ccd50e2b2343f0b92a78da6f34dac0 = $('         <div id="html_15ccd50e2b2343f0b92a78da6f34dac0"                 style="width: 100.0%; height: 100.0%;">                 University of Northampton // Students:13285</div>                 ')[0];
+                popup_4fd23c4533eb44b3b9aea4e8d954bade.setContent(html_15ccd50e2b2343f0b92a78da6f34dac0);
+            
+
+            circle_marker_e2231e4eaedc4d249c561647bea4a777.bindPopup(popup_4fd23c4533eb44b3b9aea4e8d954bade);
+
+            
+        
+        
+            
+
+            var circle_marker_76215c1d37194044a7e8bddc296ebec8 = L.circle(
+                [54.976897,-1.607575],
+                6.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_cebb9347a66948b2b3566de3419f2e37 = L.popup({maxWidth: '300'});
+
+            
+                var html_38a7205f74ec4c29a5ca07865088861a = $('         <div id="html_38a7205f74ec4c29a5ca07865088861a"                 style="width: 100.0%; height: 100.0%;">                 Northumbria University // Students:27075</div>                 ')[0];
+                popup_cebb9347a66948b2b3566de3419f2e37.setContent(html_38a7205f74ec4c29a5ca07865088861a);
+            
+
+            circle_marker_76215c1d37194044a7e8bddc296ebec8.bindPopup(popup_cebb9347a66948b2b3566de3419f2e37);
+
+            
+        
+        
+            
+
+            var circle_marker_31b957047dce4595b93364650ccc0b40 = L.circle(
+                [52.630494,1.297272],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_6e0dcf2da4cf4c5b9c59fdf75f7a801f = L.popup({maxWidth: '300'});
+
+            
+                var html_f480e483e65c41e9a0821a01d57e5b27 = $('         <div id="html_f480e483e65c41e9a0821a01d57e5b27"                 style="width: 100.0%; height: 100.0%;">                 Norwich University of the Arts // Students:1875</div>                 ')[0];
+                popup_6e0dcf2da4cf4c5b9c59fdf75f7a801f.setContent(html_f480e483e65c41e9a0821a01d57e5b27);
+            
+
+            circle_marker_31b957047dce4595b93364650ccc0b40.bindPopup(popup_6e0dcf2da4cf4c5b9c59fdf75f7a801f);
+
+            
+        
+        
+            
+
+            var circle_marker_169f3df369804077ab7e3e3b525e2336 = L.circle(
+                [52.956436,-1.152077],
+                7.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_e22b357b9676451490e2d3d50ef226f7 = L.popup({maxWidth: '300'});
+
+            
+                var html_47c4e80a81e84d618f496425628170aa = $('         <div id="html_47c4e80a81e84d618f496425628170aa"                 style="width: 100.0%; height: 100.0%;">                 University of Nottingham // Students:31910</div>                 ')[0];
+                popup_e22b357b9676451490e2d3d50ef226f7.setContent(html_47c4e80a81e84d618f496425628170aa);
+            
+
+            circle_marker_169f3df369804077ab7e3e3b525e2336.bindPopup(popup_e22b357b9676451490e2d3d50ef226f7);
+
+            
+        
+        
+            
+
+            var circle_marker_dac01431e6b543d2b9b0db0aa21a71b0 = L.circle(
+                [52.938184,-1.19438],
+                7.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_9d17724ff029444eb896f38ea3617c72 = L.popup({maxWidth: '300'});
+
+            
+                var html_08855d0e88c34675a262c81f2cc3c60d = $('         <div id="html_08855d0e88c34675a262c81f2cc3c60d"                 style="width: 100.0%; height: 100.0%;">                 University of Nottingham // Students:31910</div>                 ')[0];
+                popup_9d17724ff029444eb896f38ea3617c72.setContent(html_08855d0e88c34675a262c81f2cc3c60d);
+            
+
+            circle_marker_dac01431e6b543d2b9b0db0aa21a71b0.bindPopup(popup_9d17724ff029444eb896f38ea3617c72);
+
+            
+        
+        
+            
+
+            var circle_marker_fa16b6e2a5b945f88a5fc36906fe882f = L.circle(
+                [51.75438,-1.2232],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_488303d806c749f2bfcfd8a698bf9cd8 = L.popup({maxWidth: '300'});
+
+            
+                var html_e47b4f7286dc46c0bcdc6e2546b024f6 = $('         <div id="html_e47b4f7286dc46c0bcdc6e2546b024f6"                 style="width: 100.0%; height: 100.0%;">                 Oxford Brookes University // Students:17460</div>                 ')[0];
+                popup_488303d806c749f2bfcfd8a698bf9cd8.setContent(html_e47b4f7286dc46c0bcdc6e2546b024f6);
+            
+
+            circle_marker_fa16b6e2a5b945f88a5fc36906fe882f.bindPopup(popup_488303d806c749f2bfcfd8a698bf9cd8);
+
+            
+        
+        
+            
+
+            var circle_marker_18181a5d480b446eaa55e0c63594b7da = L.circle(
+                [51.758038,-1.26201],
+                6.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_badd829eb2af4903b0f6b5c00b7af185 = L.popup({maxWidth: '300'});
+
+            
+                var html_7c0f658ec7584c349445b5c941fe27c3 = $('         <div id="html_7c0f658ec7584c349445b5c941fe27c3"                 style="width: 100.0%; height: 100.0%;">                 University of Oxford // Students:26005</div>                 ')[0];
+                popup_badd829eb2af4903b0f6b5c00b7af185.setContent(html_7c0f658ec7584c349445b5c941fe27c3);
+            
+
+            circle_marker_18181a5d480b446eaa55e0c63594b7da.bindPopup(popup_badd829eb2af4903b0f6b5c00b7af185);
+
+            
+        
+        
+            
+
+            var circle_marker_ea3479bc67e34664a4c442d708203f51 = L.circle(
+                [50.37341,-4.137411],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_8008e354479e4d45b9181e6e2d559863 = L.popup({maxWidth: '300'});
+
+            
+                var html_17c6f3439edb49079a38592750c17d2e = $('         <div id="html_17c6f3439edb49079a38592750c17d2e"                 style="width: 100.0%; height: 100.0%;">                 Plymouth College of Art // Students:995</div>                 ')[0];
+                popup_8008e354479e4d45b9181e6e2d559863.setContent(html_17c6f3439edb49079a38592750c17d2e);
+            
+
+            circle_marker_ea3479bc67e34664a4c442d708203f51.bindPopup(popup_8008e354479e4d45b9181e6e2d559863);
+
+            
+        
+        
+            
+
+            var circle_marker_850be18cff1348da8ea5a4afe62d9ed2 = L.circle(
+                [50.375329,-4.138735],
+                6.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_26a2858f4b86444f9c9f8ca2de135771 = L.popup({maxWidth: '300'});
+
+            
+                var html_528cc7f43c954b83a920f6ba31353943 = $('         <div id="html_528cc7f43c954b83a920f6ba31353943"                 style="width: 100.0%; height: 100.0%;">                 University of Plymouth // Students:25895</div>                 ')[0];
+                popup_26a2858f4b86444f9c9f8ca2de135771.setContent(html_528cc7f43c954b83a920f6ba31353943);
+            
+
+            circle_marker_850be18cff1348da8ea5a4afe62d9ed2.bindPopup(popup_26a2858f4b86444f9c9f8ca2de135771);
+
+            
+        
+        
+            
+
+            var circle_marker_db677bdbf0e04da6bc52fd7d3fa15449 = L.circle(
+                [50.795187,-1.093628],
+                5.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_7f8977b9d05b4b0c8dcc55683de9fad7 = L.popup({maxWidth: '300'});
+
+            
+                var html_34f83329ca2c4afdb3f9404fb8ba001c = $('         <div id="html_34f83329ca2c4afdb3f9404fb8ba001c"                 style="width: 100.0%; height: 100.0%;">                 University of Portsmouth // Students:21625</div>                 ')[0];
+                popup_7f8977b9d05b4b0c8dcc55683de9fad7.setContent(html_34f83329ca2c4afdb3f9404fb8ba001c);
+            
+
+            circle_marker_db677bdbf0e04da6bc52fd7d3fa15449.bindPopup(popup_7f8977b9d05b4b0c8dcc55683de9fad7);
+
+            
+        
+        
+            
+
+            var circle_marker_3a8d07ad113647e98952bf33d22b2d71 = L.circle(
+                [55.931281,-3.073057],
+                6.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_a16caf3c652a49fcb2387d41c84a47ed = L.popup({maxWidth: '300'});
+
+            
+                var html_85a00ff1bae44494af8a35b2fd6ea027 = $('         <div id="html_85a00ff1bae44494af8a35b2fd6ea027"                 style="width: 100.0%; height: 100.0%;">                 University of Edinburgh // Students:28880</div>                 ')[0];
+                popup_a16caf3c652a49fcb2387d41c84a47ed.setContent(html_85a00ff1bae44494af8a35b2fd6ea027);
+            
+
+            circle_marker_3a8d07ad113647e98952bf33d22b2d71.bindPopup(popup_a16caf3c652a49fcb2387d41c84a47ed);
+
+            
+        
+        
+            
+
+            var circle_marker_792df1d8a7c04ee29a8d31e8c425b984 = L.circle(
+                [51.524636,-0.04071],
+                33.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_0f5e1011774c4521aadcfa2d95b8cc43 = L.popup({maxWidth: '300'});
+
+            
+                var html_63bce39a44dc4e4dae2e2040b8b7f37e = $('         <div id="html_63bce39a44dc4e4dae2e2040b8b7f37e"                 style="width: 100.0%; height: 100.0%;">                 University of London[a] // Students:161270</div>                 ')[0];
+                popup_0f5e1011774c4521aadcfa2d95b8cc43.setContent(html_63bce39a44dc4e4dae2e2040b8b7f37e);
+            
+
+            circle_marker_792df1d8a7c04ee29a8d31e8c425b984.bindPopup(popup_0f5e1011774c4521aadcfa2d95b8cc43);
+
+            
+        
+        
+            
+
+            var circle_marker_1df616eca4924be19d25384cfed3bad8 = L.circle(
+                [51.501677,0.005651],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_3c36d2b38aca4c31bdbb2c63c8bb7c91 = L.popup({maxWidth: '300'});
+
+            
+                var html_6170dc413b3941d9a4ccfeec357f88c6 = $('         <div id="html_6170dc413b3941d9a4ccfeec357f88c6"                 style="width: 100.0%; height: 100.0%;">                 Ravensbourne // Students:2055</div>                 ')[0];
+                popup_3c36d2b38aca4c31bdbb2c63c8bb7c91.setContent(html_6170dc413b3941d9a4ccfeec357f88c6);
+            
+
+            circle_marker_1df616eca4924be19d25384cfed3bad8.bindPopup(popup_3c36d2b38aca4c31bdbb2c63c8bb7c91);
+
+            
+        
+        
+            
+
+            var circle_marker_52fc695eeaa74508ba9d4c21e9e9f337 = L.circle(
+                [51.457625,-0.945636],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_d1a6d27c8e264f92a63f39ba5bfdd120 = L.popup({maxWidth: '300'});
+
+            
+                var html_e825acd0a091426cb8ed273e7eadf21c = $('         <div id="html_e825acd0a091426cb8ed273e7eadf21c"                 style="width: 100.0%; height: 100.0%;">                 University of Reading // Students:14325</div>                 ')[0];
+                popup_d1a6d27c8e264f92a63f39ba5bfdd120.setContent(html_e825acd0a091426cb8ed273e7eadf21c);
+            
+
+            circle_marker_52fc695eeaa74508ba9d4c21e9e9f337.bindPopup(popup_d1a6d27c8e264f92a63f39ba5bfdd120);
+
+            
+        
+        
+            
+
+            var circle_marker_6bff428ea2f6482caadd7b178fa52bbc = L.circle(
+                [57.118344,-2.14474],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_5d31bd27a16e413fa15dcb99adda7a29 = L.popup({maxWidth: '300'});
+
+            
+                var html_c650c4f2d9384bc199c6c02e5d898295 = $('         <div id="html_c650c4f2d9384bc199c6c02e5d898295"                 style="width: 100.0%; height: 100.0%;">                 Robert Gordon University // Students:13240</div>                 ')[0];
+                popup_5d31bd27a16e413fa15dcb99adda7a29.setContent(html_c650c4f2d9384bc199c6c02e5d898295);
+            
+
+            circle_marker_6bff428ea2f6482caadd7b178fa52bbc.bindPopup(popup_5d31bd27a16e413fa15dcb99adda7a29);
+
+            
+        
+        
+            
+
+            var circle_marker_0b65982ea42945aaa77b56f2a95ba7b1 = L.circle(
+                [51.455585,-0.247673],
+                2.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_8ad9066ad2b54c1b9eb61abb131a14b2 = L.popup({maxWidth: '300'});
+
+            
+                var html_11eb7a2172f747ad8309a4db2d8a7499 = $('         <div id="html_11eb7a2172f747ad8309a4db2d8a7499"                 style="width: 100.0%; height: 100.0%;">                 Roehampton University // Students:7650</div>                 ')[0];
+                popup_8ad9066ad2b54c1b9eb61abb131a14b2.setContent(html_11eb7a2172f747ad8309a4db2d8a7499);
+            
+
+            circle_marker_0b65982ea42945aaa77b56f2a95ba7b1.bindPopup(popup_8ad9066ad2b54c1b9eb61abb131a14b2);
+
+            
+        
+        
+            
+
+            var circle_marker_605840afded648c3861f32fcde3f69d1 = L.circle(
+                [51.439271,0.106446],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_8e8903fb912b4b36ae8997f1a3a2fb0a = L.popup({maxWidth: '300'});
+
+            
+                var html_040f962899014ff4a6aefd26c75f8a5b = $('         <div id="html_040f962899014ff4a6aefd26c75f8a5b"                 style="width: 100.0%; height: 100.0%;">                 Rose Bruford College // Students:790</div>                 ')[0];
+                popup_8e8903fb912b4b36ae8997f1a3a2fb0a.setContent(html_040f962899014ff4a6aefd26c75f8a5b);
+            
+
+            circle_marker_605840afded648c3861f32fcde3f69d1.bindPopup(popup_8e8903fb912b4b36ae8997f1a3a2fb0a);
+
+            
+        
+        
+            
+
+            var circle_marker_126b8690e932418d9bc0ce85a763b84a = L.circle(
+                [51.523497,-0.1517],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_9e304860149b46a38ea6de46b4a40be6 = L.popup({maxWidth: '300'});
+
+            
+                var html_871e74eab0a248d4a1876e46ec96fa93 = $('         <div id="html_871e74eab0a248d4a1876e46ec96fa93"                 style="width: 100.0%; height: 100.0%;">                 Royal Academy of Music[c] // Students:775</div>                 ')[0];
+                popup_9e304860149b46a38ea6de46b4a40be6.setContent(html_871e74eab0a248d4a1876e46ec96fa93);
+            
+
+            circle_marker_126b8690e932418d9bc0ce85a763b84a.bindPopup(popup_9e304860149b46a38ea6de46b4a40be6);
+
+            
+        
+        
+            
+
+            var circle_marker_743ecaa9c54a43cca83f5af333ec2179 = L.circle(
+                [51.709508,-1.994916],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_84f771cc5e754db3a9181bdc10acba49 = L.popup({maxWidth: '300'});
+
+            
+                var html_7151c5ce20d24188a373c6d6d50f1032 = $('         <div id="html_7151c5ce20d24188a373c6d6d50f1032"                 style="width: 100.0%; height: 100.0%;">                 Royal Agricultural University // Students:1185</div>                 ')[0];
+                popup_84f771cc5e754db3a9181bdc10acba49.setContent(html_7151c5ce20d24188a373c6d6d50f1032);
+            
+
+            circle_marker_743ecaa9c54a43cca83f5af333ec2179.bindPopup(popup_84f771cc5e754db3a9181bdc10acba49);
+
+            
+        
+        
+            
+
+            var circle_marker_2174fdce042d4ba79e041026b06982ce = L.circle(
+                [51.544325,-0.174205],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_ed54ecf762d348b4a6afd136c05ffb4d = L.popup({maxWidth: '300'});
+
+            
+                var html_1b3403e252fb4146acc5c0ca68f228fd = $('         <div id="html_1b3403e252fb4146acc5c0ca68f228fd"                 style="width: 100.0%; height: 100.0%;">                 Royal Central School of Speech and Drama[c] // Students:995</div>                 ')[0];
+                popup_ed54ecf762d348b4a6afd136c05ffb4d.setContent(html_1b3403e252fb4146acc5c0ca68f228fd);
+            
+
+            circle_marker_2174fdce042d4ba79e041026b06982ce.bindPopup(popup_ed54ecf762d348b4a6afd136c05ffb4d);
+
+            
+        
+        
+            
+
+            var circle_marker_8da75532c90f48d19f1790916553189c = L.circle(
+                [51.501354,-0.178473],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_82c18735f35945bd9ff2ef573821ece6 = L.popup({maxWidth: '300'});
+
+            
+                var html_c4866951808349dc8dd68a11db6f513b = $('         <div id="html_c4866951808349dc8dd68a11db6f513b"                 style="width: 100.0%; height: 100.0%;">                 Royal College of Art // Students:1445</div>                 ')[0];
+                popup_82c18735f35945bd9ff2ef573821ece6.setContent(html_c4866951808349dc8dd68a11db6f513b);
+            
+
+            circle_marker_8da75532c90f48d19f1790916553189c.bindPopup(popup_82c18735f35945bd9ff2ef573821ece6);
+
+            
+        
+        
+            
+
+            var circle_marker_a2c84fad76a5402990b03d14968ade85 = L.circle(
+                [51.499279,-0.176913],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_ccdb1a96d43940629c495231e3207c09 = L.popup({maxWidth: '300'});
+
+            
+                var html_776b52e86e3c4ced9602444b328ceb11 = $('         <div id="html_776b52e86e3c4ced9602444b328ceb11"                 style="width: 100.0%; height: 100.0%;">                 Royal College of Music // Students:810</div>                 ')[0];
+                popup_ccdb1a96d43940629c495231e3207c09.setContent(html_776b52e86e3c4ced9602444b328ceb11);
+            
+
+            circle_marker_a2c84fad76a5402990b03d14968ade85.bindPopup(popup_ccdb1a96d43940629c495231e3207c09);
+
+            
+        
+        
+            
+
+            var circle_marker_261d9f4666874a32b021b28adea72da0 = L.circle(
+                [55.865813,-4.257595],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_c38a2a0a3e754ad1abed1bde6e2f24e1 = L.popup({maxWidth: '300'});
+
+            
+                var html_1b9e949297f0470d894416afb92c098d = $('         <div id="html_1b9e949297f0470d894416afb92c098d"                 style="width: 100.0%; height: 100.0%;">                 Royal Conservatoire of Scotland // Students:985</div>                 ')[0];
+                popup_c38a2a0a3e754ad1abed1bde6e2f24e1.setContent(html_1b9e949297f0470d894416afb92c098d);
+            
+
+            circle_marker_261d9f4666874a32b021b28adea72da0.bindPopup(popup_c38a2a0a3e754ad1abed1bde6e2f24e1);
+
+            
+        
+        
+            
+
+            var circle_marker_12d99b2169594c9897049f1d91807f37 = L.circle(
+                [53.468557,-2.236963],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_6594124ba45a483dbb311357607a192b = L.popup({maxWidth: '300'});
+
+            
+                var html_63c5157e4ffe417e936e172b2e8af440 = $('         <div id="html_63c5157e4ffe417e936e172b2e8af440"                 style="width: 100.0%; height: 100.0%;">                 Royal Northern College of Music // Students:805</div>                 ')[0];
+                popup_6594124ba45a483dbb311357607a192b.setContent(html_63c5157e4ffe417e936e172b2e8af440);
+            
+
+            circle_marker_12d99b2169594c9897049f1d91807f37.bindPopup(popup_6594124ba45a483dbb311357607a192b);
+
+            
+        
+        
+            
+
+            var circle_marker_7b6ccefe26c642319d0385331a91186d = L.circle(
+                [51.536851,-0.133524],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_4a566ddad1d84a93940f74d1ebf80e46 = L.popup({maxWidth: '300'});
+
+            
+                var html_d6690eefc8914335b75d15d27a3ee909 = $('         <div id="html_d6690eefc8914335b75d15d27a3ee909"                 style="width: 100.0%; height: 100.0%;">                 Royal Veterinary College[c] // Students:2145</div>                 ')[0];
+                popup_4a566ddad1d84a93940f74d1ebf80e46.setContent(html_d6690eefc8914335b75d15d27a3ee909);
+            
+
+            circle_marker_7b6ccefe26c642319d0385331a91186d.bindPopup(popup_4a566ddad1d84a93940f74d1ebf80e46);
+
+            
+        
+        
+            
+
+            var circle_marker_52d2b107aa6a4acbbceb266ef64c1dd8 = L.circle(
+                [55.921623,-3.176228],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_07dca929cb4d41939c9fe07a05cff75f = L.popup({maxWidth: '300'});
+
+            
+                var html_56b23b87e9a84fdaa665d5f066512bee = $('         <div id="html_56b23b87e9a84fdaa665d5f066512bee"                 style="width: 100.0%; height: 100.0%;">                 SRUC // Students:1615</div>                 ')[0];
+                popup_07dca929cb4d41939c9fe07a05cff75f.setContent(html_56b23b87e9a84fdaa665d5f066512bee);
+            
+
+            circle_marker_52d2b107aa6a4acbbceb266ef64c1dd8.bindPopup(popup_07dca929cb4d41939c9fe07a05cff75f);
+
+            
+        
+        
+            
+
+            var circle_marker_3584bd3a68004bd899f3ef3cafeb33aa = L.circle(
+                [56.341239,-2.793287],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_2bf05b14e49f4a408b4c80ef594f959c = L.popup({maxWidth: '300'});
+
+            
+                var html_659bca5cf22a448a95645c4da85108a4 = $('         <div id="html_659bca5cf22a448a95645c4da85108a4"                 style="width: 100.0%; height: 100.0%;">                 The University of St Andrews // Students:10660</div>                 ')[0];
+                popup_2bf05b14e49f4a408b4c80ef594f959c.setContent(html_659bca5cf22a448a95645c4da85108a4);
+            
+
+            circle_marker_3584bd3a68004bd899f3ef3cafeb33aa.bindPopup(popup_2bf05b14e49f4a408b4c80ef594f959c);
+
+            
+        
+        
+            
+
+            var circle_marker_62bff42df9d04dda9c0d55048e7f33a9 = L.circle(
+                [51.427798,-0.175228],
+                2.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_d43010fac49f44798d770e26c0ea0314 = L.popup({maxWidth: '300'});
+
+            
+                var html_a2f034fbea6b424c82605a1697c7a823 = $('         <div id="html_a2f034fbea6b424c82605a1697c7a823"                 style="width: 100.0%; height: 100.0%;">                 St George&#39;s Hospital Medical School[c] // Students:5505</div>                 ')[0];
+                popup_d43010fac49f44798d770e26c0ea0314.setContent(html_a2f034fbea6b424c82605a1697c7a823);
+            
+
+            circle_marker_62bff42df9d04dda9c0d55048e7f33a9.bindPopup(popup_d43010fac49f44798d770e26c0ea0314);
+
+            
+        
+        
+            
+
+            var circle_marker_5e975a35a9094bc1b1d805041cbbe53f = L.circle(
+                [50.420866,-4.110758],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_13c4aeb6ca164fcbb9d2b1b26a721e2f = L.popup({maxWidth: '300'});
+
+            
+                var html_c103a720f7fd4ad29d19421a0dfd2b12 = $('         <div id="html_c103a720f7fd4ad29d19421a0dfd2b12"                 style="width: 100.0%; height: 100.0%;">                 University of St Mark and St John // Students:2420</div>                 ')[0];
+                popup_13c4aeb6ca164fcbb9d2b1b26a721e2f.setContent(html_c103a720f7fd4ad29d19421a0dfd2b12);
+            
+
+            circle_marker_5e975a35a9094bc1b1d805041cbbe53f.bindPopup(popup_13c4aeb6ca164fcbb9d2b1b26a721e2f);
+
+            
+        
+        
+            
+
+            var circle_marker_8302e762c735444d92a41539d043246e = L.circle(
+                [54.593162,-5.961323],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_34cf874a612d40d19c217d261e20df04 = L.popup({maxWidth: '300'});
+
+            
+                var html_04c23b8ce6744cae9a472c8af8613afc = $('         <div id="html_04c23b8ce6744cae9a472c8af8613afc"                 style="width: 100.0%; height: 100.0%;">                 St Mary&#39;s University College // Students:1155</div>                 ')[0];
+                popup_34cf874a612d40d19c217d261e20df04.setContent(html_04c23b8ce6744cae9a472c8af8613afc);
+            
+
+            circle_marker_8302e762c735444d92a41539d043246e.bindPopup(popup_34cf874a612d40d19c217d261e20df04);
+
+            
+        
+        
+            
+
+            var circle_marker_61e010afc5094dc988b643ddbd1b60b3 = L.circle(
+                [51.436152,-0.335907],
+                2.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_6f404044d543433ab64bdace5504e6d2 = L.popup({maxWidth: '300'});
+
+            
+                var html_60455edbe57a47af815b66de64842eb0 = $('         <div id="html_60455edbe57a47af815b66de64842eb0"                 style="width: 100.0%; height: 100.0%;">                 St Mary&#39;s University, Twickenham // Students:5335</div>                 ')[0];
+                popup_6f404044d543433ab64bdace5504e6d2.setContent(html_60455edbe57a47af815b66de64842eb0);
+            
+
+            circle_marker_61e010afc5094dc988b643ddbd1b60b3.bindPopup(popup_6f404044d543433ab64bdace5504e6d2);
+
+            
+        
+        
+            
+
+            var circle_marker_85dea84979904c56ba50727895e3d243 = L.circle(
+                [53.483487,-2.270651],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_0d1478e88329448b999467d3e0b756bb = L.popup({maxWidth: '300'});
+
+            
+                var html_00e054c3f0794f2db323e45862aa3840 = $('         <div id="html_00e054c3f0794f2db323e45862aa3840"                 style="width: 100.0%; height: 100.0%;">                 University of Salford // Students:18920</div>                 ')[0];
+                popup_0d1478e88329448b999467d3e0b756bb.setContent(html_00e054c3f0794f2db323e45862aa3840);
+            
+
+            circle_marker_85dea84979904c56ba50727895e3d243.bindPopup(popup_0d1478e88329448b999467d3e0b756bb);
+
+            
+        
+        
+            
+
+            var circle_marker_37aaeafd446a4acfb626fa0073f7d3e1 = L.circle(
+                [51.52235,-0.129259],
+                2.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_75aaec2fb65147709b3c3e4a41b04f5e = L.popup({maxWidth: '300'});
+
+            
+                var html_894d6c577c014619b35607f1c1d8eb0d = $('         <div id="html_894d6c577c014619b35607f1c1d8eb0d"                 style="width: 100.0%; height: 100.0%;">                 School of Oriental and African Studies[c] // Students:5910</div>                 ')[0];
+                popup_75aaec2fb65147709b3c3e4a41b04f5e.setContent(html_894d6c577c014619b35607f1c1d8eb0d);
+            
+
+            circle_marker_37aaeafd446a4acfb626fa0073f7d3e1.bindPopup(popup_75aaec2fb65147709b3c3e4a41b04f5e);
+
+            
+        
+        
+            
+
+            var circle_marker_abe0cc6e2a6f419ab24cc3bd0f99e9e6 = L.circle(
+                [53.379194,-1.465255],
+                7.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_addbb079bf8d4a728777c431b85f8e68 = L.popup({maxWidth: '300'});
+
+            
+                var html_e9dbe7d0fb134f63923fbb4b619f1b9d = $('         <div id="html_e9dbe7d0fb134f63923fbb4b619f1b9d"                 style="width: 100.0%; height: 100.0%;">                 Sheffield Hallam University // Students:31530</div>                 ')[0];
+                popup_addbb079bf8d4a728777c431b85f8e68.setContent(html_e9dbe7d0fb134f63923fbb4b619f1b9d);
+            
+
+            circle_marker_abe0cc6e2a6f419ab24cc3bd0f99e9e6.bindPopup(popup_addbb079bf8d4a728777c431b85f8e68);
+
+            
+        
+        
+            
+
+            var circle_marker_5e3d94ece6674409833c46b7934c59c9 = L.circle(
+                [53.381363,-1.48853],
+                6.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_233349a02f8740d5b97b50f448dd09d8 = L.popup({maxWidth: '300'});
+
+            
+                var html_118ae5e7345b4194a4d7132e2d27e6c2 = $('         <div id="html_118ae5e7345b4194a4d7132e2d27e6c2"                 style="width: 100.0%; height: 100.0%;">                 University of Sheffield // Students:27195</div>                 ')[0];
+                popup_233349a02f8740d5b97b50f448dd09d8.setContent(html_118ae5e7345b4194a4d7132e2d27e6c2);
+            
+
+            circle_marker_5e3d94ece6674409833c46b7934c59c9.bindPopup(popup_233349a02f8740d5b97b50f448dd09d8);
+
+            
+        
+        
+            
+
+            var circle_marker_c915a66945214b14965cd1045d73b9a2 = L.circle(
+                [51.498708,-0.101772],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_4b0e197813ab4a3a8e293331948f7bf0 = L.popup({maxWidth: '300'});
+
+            
+                var html_fa7036e14ebc4f1dabc6007dcbb2894e = $('         <div id="html_fa7036e14ebc4f1dabc6007dcbb2894e"                 style="width: 100.0%; height: 100.0%;">                 London South Bank University // Students:17735</div>                 ')[0];
+                popup_4b0e197813ab4a3a8e293331948f7bf0.setContent(html_fa7036e14ebc4f1dabc6007dcbb2894e);
+            
+
+            circle_marker_c915a66945214b14965cd1045d73b9a2.bindPopup(popup_4b0e197813ab4a3a8e293331948f7bf0);
+
+            
+        
+        
+            
+
+            var circle_marker_03c1b7b64f54448987ad424915976bf8 = L.circle(
+                [51.587622,-3.327445],
+                6.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_3ac40c767885408ab8f224197b1db270 = L.popup({maxWidth: '300'});
+
+            
+                var html_bc6aae5d59fb44f3abfb0ca144ee1fe9 = $('         <div id="html_bc6aae5d59fb44f3abfb0ca144ee1fe9"                 style="width: 100.0%; height: 100.0%;">                 University of South Wales // Students:27710</div>                 ')[0];
+                popup_3ac40c767885408ab8f224197b1db270.setContent(html_bc6aae5d59fb44f3abfb0ca144ee1fe9);
+            
+
+            circle_marker_03c1b7b64f54448987ad424915976bf8.bindPopup(popup_3ac40c767885408ab8f224197b1db270);
+
+            
+        
+        
+            
+
+            var circle_marker_1be080b3555d48b99c35e24ede970909 = L.circle(
+                [50.907747,-1.400166],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_7887bdf15ced4bcf8be46df75a6829b0 = L.popup({maxWidth: '300'});
+
+            
+                var html_2facae5fee644e8e80d30ee29bed3d2a = $('         <div id="html_2facae5fee644e8e80d30ee29bed3d2a"                 style="width: 100.0%; height: 100.0%;">                 Southampton Solent University // Students:11305</div>                 ')[0];
+                popup_7887bdf15ced4bcf8be46df75a6829b0.setContent(html_2facae5fee644e8e80d30ee29bed3d2a);
+            
+
+            circle_marker_1be080b3555d48b99c35e24ede970909.bindPopup(popup_7887bdf15ced4bcf8be46df75a6829b0);
+
+            
+        
+        
+            
+
+            var circle_marker_53e549d5c4e847f7a1ad1c4ae331bcb6 = L.circle(
+                [50.934099,-1.395714],
+                5.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_c02eca7fb7d04210ba8be9ece427794b = L.popup({maxWidth: '300'});
+
+            
+                var html_0f74d454cfa246cc9dcd09868df9ff66 = $('         <div id="html_0f74d454cfa246cc9dcd09868df9ff66"                 style="width: 100.0%; height: 100.0%;">                 University of Southampton // Students:23795</div>                 ')[0];
+                popup_c02eca7fb7d04210ba8be9ece427794b.setContent(html_0f74d454cfa246cc9dcd09868df9ff66);
+            
+
+            circle_marker_53e549d5c4e847f7a1ad1c4ae331bcb6.bindPopup(popup_c02eca7fb7d04210ba8be9ece427794b);
+
+            
+        
+        
+            
+
+            var circle_marker_24811f74767349ff8074aabf46ef2e3c = L.circle(
+                [52.812975,-2.081855],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_72f0d16aab5040c1b87d82819fa2dd52 = L.popup({maxWidth: '300'});
+
+            
+                var html_ae0934d62f1148609e65ea7ea9cf32af = $('         <div id="html_ae0934d62f1148609e65ea7ea9cf32af"                 style="width: 100.0%; height: 100.0%;">                 Staffordshire University // Students:17735</div>                 ')[0];
+                popup_72f0d16aab5040c1b87d82819fa2dd52.setContent(html_ae0934d62f1148609e65ea7ea9cf32af);
+            
+
+            circle_marker_24811f74767349ff8074aabf46ef2e3c.bindPopup(popup_72f0d16aab5040c1b87d82819fa2dd52);
+
+            
+        
+        
+            
+
+            var circle_marker_2c807b9acbe940b886ffb20da2d875b2 = L.circle(
+                [56.145463,-3.920023],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_6d5fc0f90add47cc9b83e0163b0dd14d = L.popup({maxWidth: '300'});
+
+            
+                var html_333b8e2a8be44d82ada8f2e8358db2f4 = $('         <div id="html_333b8e2a8be44d82ada8f2e8358db2f4"                 style="width: 100.0%; height: 100.0%;">                 University of Stirling // Students:11100</div>                 ')[0];
+                popup_6d5fc0f90add47cc9b83e0163b0dd14d.setContent(html_333b8e2a8be44d82ada8f2e8358db2f4);
+            
+
+            circle_marker_2c807b9acbe940b886ffb20da2d875b2.bindPopup(popup_6d5fc0f90add47cc9b83e0163b0dd14d);
+
+            
+        
+        
+            
+
+            var circle_marker_e4cad99070cf4864925a7515fe7ff75a = L.circle(
+                [54.571733,-5.936458],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_78ac407443c44ef6b0f531ce30dc08cc = L.popup({maxWidth: '300'});
+
+            
+                var html_f1c3c05f7c1449f38811a98676e7bf57 = $('         <div id="html_f1c3c05f7c1449f38811a98676e7bf57"                 style="width: 100.0%; height: 100.0%;">                 Stranmillis University College // Students:2290</div>                 ')[0];
+                popup_78ac407443c44ef6b0f531ce30dc08cc.setContent(html_f1c3c05f7c1449f38811a98676e7bf57);
+            
+
+            circle_marker_e4cad99070cf4864925a7515fe7ff75a.bindPopup(popup_78ac407443c44ef6b0f531ce30dc08cc);
+
+            
+        
+        
+            
+
+            var circle_marker_ee5a5f7f5f2f4ccf932a4a5c755ee157 = L.circle(
+                [55.86125,-4.244706],
+                5.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_71de27b6e8ec4fa5a81a1cc3b6800331 = L.popup({maxWidth: '300'});
+
+            
+                var html_b9daa19d92c3460fabbfeb875bbb94e8 = $('         <div id="html_b9daa19d92c3460fabbfeb875bbb94e8"                 style="width: 100.0%; height: 100.0%;">                 University of Strathclyde // Students:21210</div>                 ')[0];
+                popup_71de27b6e8ec4fa5a81a1cc3b6800331.setContent(html_b9daa19d92c3460fabbfeb875bbb94e8);
+            
+
+            circle_marker_ee5a5f7f5f2f4ccf932a4a5c755ee157.bindPopup(popup_71de27b6e8ec4fa5a81a1cc3b6800331);
+
+            
+        
+        
+            
+
+            var circle_marker_ff948df5f1a346beb8124a4da2525d8b = L.circle(
+                [54.904456,-1.390973],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_d3819cc6aec0431aa2bd14791574d92f = L.popup({maxWidth: '300'});
+
+            
+                var html_8f26b15f2f2144d6910f4db333357998 = $('         <div id="html_8f26b15f2f2144d6910f4db333357998"                 style="width: 100.0%; height: 100.0%;">                 University of Sunderland // Students:13695</div>                 ')[0];
+                popup_d3819cc6aec0431aa2bd14791574d92f.setContent(html_8f26b15f2f2144d6910f4db333357998);
+            
+
+            circle_marker_ff948df5f1a346beb8124a4da2525d8b.bindPopup(popup_d3819cc6aec0431aa2bd14791574d92f);
+
+            
+        
+        
+            
+
+            var circle_marker_525a1a5856c1473dad4e47eb75d69b2a = L.circle(
+                [51.242572,-0.587946],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_a60d36f9e26140778feaf2132db5a06a = L.popup({maxWidth: '300'});
+
+            
+                var html_3c3be2b85d15420d84ea9beaaf3cb431 = $('         <div id="html_3c3be2b85d15420d84ea9beaaf3cb431"                 style="width: 100.0%; height: 100.0%;">                 University of Surrey // Students:14300</div>                 ')[0];
+                popup_a60d36f9e26140778feaf2132db5a06a.setContent(html_3c3be2b85d15420d84ea9beaaf3cb431);
+            
+
+            circle_marker_525a1a5856c1473dad4e47eb75d69b2a.bindPopup(popup_a60d36f9e26140778feaf2132db5a06a);
+
+            
+        
+        
+            
+
+            var circle_marker_6d0a7b4fe56c4c82bdee4c35aa981902 = L.circle(
+                [50.86447,-0.087076],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_ff4fb4b146c0493c85b1b7471a011960 = L.popup({maxWidth: '300'});
+
+            
+                var html_4146efc633ce4470845201cb979c293c = $('         <div id="html_4146efc633ce4470845201cb979c293c"                 style="width: 100.0%; height: 100.0%;">                 University of Sussex // Students:13535</div>                 ')[0];
+                popup_ff4fb4b146c0493c85b1b7471a011960.setContent(html_4146efc633ce4470845201cb979c293c);
+            
+
+            circle_marker_6d0a7b4fe56c4c82bdee4c35aa981902.bindPopup(popup_ff4fb4b146c0493c85b1b7471a011960);
+
+            
+        
+        
+            
+
+            var circle_marker_eb427af484274f549d852fc2ea2b49bf = L.circle(
+                [51.609627,-3.980616],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_e09ad8b486a0439e83c0d70bac52e67b = L.popup({maxWidth: '300'});
+
+            
+                var html_59d9d8a2e4e248a8aa60a0d85f982bfe = $('         <div id="html_59d9d8a2e4e248a8aa60a0d85f982bfe"                 style="width: 100.0%; height: 100.0%;">                 Swansea University // Students:16020</div>                 ')[0];
+                popup_e09ad8b486a0439e83c0d70bac52e67b.setContent(html_59d9d8a2e4e248a8aa60a0d85f982bfe);
+            
+
+            circle_marker_eb427af484274f549d852fc2ea2b49bf.bindPopup(popup_e09ad8b486a0439e83c0d70bac52e67b);
+
+            
+        
+        
+            
+
+            var circle_marker_c7c2cf1a14154fdcbd7134ee1ee6a004 = L.circle(
+                [51.604752,-0.638385],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_6af27e759d9647ada9b057ffe0014dc5 = L.popup({maxWidth: '300'});
+
+            
+                var html_a14fb50d7c5b425fb4795894bf120414 = $('         <div id="html_a14fb50d7c5b425fb4795894bf120414"                 style="width: 100.0%; height: 100.0%;">                 National Film and Television School // Students:225</div>                 ')[0];
+                popup_6af27e759d9647ada9b057ffe0014dc5.setContent(html_a14fb50d7c5b425fb4795894bf120414);
+            
+
+            circle_marker_c7c2cf1a14154fdcbd7134ee1ee6a004.bindPopup(popup_6af27e759d9647ada9b057ffe0014dc5);
+
+            
+        
+        
+            
+
+            var circle_marker_4a3c2c293c7642659f9286241b41f945 = L.circle(
+                [54.572076,-1.234694],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_5dd9e17fce2247c7aaf0d6e7f1c458ca = L.popup({maxWidth: '300'});
+
+            
+                var html_875662378d0d4ab18cf3a705cb04459f = $('         <div id="html_875662378d0d4ab18cf3a705cb04459f"                 style="width: 100.0%; height: 100.0%;">                 Teesside University // Students:17920</div>                 ')[0];
+                popup_5dd9e17fce2247c7aaf0d6e7f1c458ca.setContent(html_875662378d0d4ab18cf3a705cb04459f);
+            
+
+            circle_marker_4a3c2c293c7642659f9286241b41f945.bindPopup(popup_5dd9e17fce2247c7aaf0d6e7f1c458ca);
+
+            
+        
+        
+            
+
+            var circle_marker_3b2806eb1a28422aa135aa43d847db84 = L.circle(
+                [51.507259,-0.303013],
+                33.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_13f359bbf7604a3c8878de8c1ac05c7c = L.popup({maxWidth: '300'});
+
+            
+                var html_9b3de66551124070b9080c5b5ae5195c = $('         <div id="html_9b3de66551124070b9080c5b5ae5195c"                 style="width: 100.0%; height: 100.0%;">                 University of London[a] // Students:161270</div>                 ')[0];
+                popup_13f359bbf7604a3c8878de8c1ac05c7c.setContent(html_9b3de66551124070b9080c5b5ae5195c);
+            
+
+            circle_marker_3b2806eb1a28422aa135aa43d847db84.bindPopup(popup_13f359bbf7604a3c8878de8c1ac05c7c);
+
+            
+        
+        
+            
+
+            var circle_marker_132128846371454c9b130915a605bd4e = L.circle(
+                [52.024914,-0.709747],
+                27.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_235b865ba5ae45b3ab990454ae0da154 = L.popup({maxWidth: '300'});
+
+            
+                var html_da80cf5ecec44d8c83b327ac9a428309 = $('         <div id="html_da80cf5ecec44d8c83b327ac9a428309"                 style="width: 100.0%; height: 100.0%;">                 Open University[b] // Students:132360</div>                 ')[0];
+                popup_235b865ba5ae45b3ab990454ae0da154.setContent(html_da80cf5ecec44d8c83b327ac9a428309);
+            
+
+            circle_marker_132128846371454c9b130915a605bd4e.bindPopup(popup_235b865ba5ae45b3ab990454ae0da154);
+
+            
+        
+        
+            
+
+            var circle_marker_40904a5ad9a64d34a1e48441e6165415 = L.circle(
+                [51.485538,-3.181031],
+                6.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_b611e7b847b242bf838ff8243ce02caf = L.popup({maxWidth: '300'});
+
+            
+                var html_54210ec483f64d41b001442b3a45ec25 = $('         <div id="html_54210ec483f64d41b001442b3a45ec25"                 style="width: 100.0%; height: 100.0%;">                 University of South Wales // Students:27710</div>                 ')[0];
+                popup_b611e7b847b242bf838ff8243ce02caf.setContent(html_54210ec483f64d41b001442b3a45ec25);
+            
+
+            circle_marker_40904a5ad9a64d34a1e48441e6165415.bindPopup(popup_b611e7b847b242bf838ff8243ce02caf);
+
+            
+        
+        
+            
+
+            var circle_marker_98bfe84a9af34e63aab635529458ea95 = L.circle(
+                [51.483587,-0.007198],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_d6884c9bd2e74a8ea3d9235970e6bafd = L.popup({maxWidth: '300'});
+
+            
+                var html_758092fc0bd044d793c4a1a5cfe4af0d = $('         <div id="html_758092fc0bd044d793c4a1a5cfe4af0d"                 style="width: 100.0%; height: 100.0%;">                 Trinity Laban Conservatoire of Music and Dance // Students:960</div>                 ')[0];
+                popup_d6884c9bd2e74a8ea3d9235970e6bafd.setContent(html_758092fc0bd044d793c4a1a5cfe4af0d);
+            
+
+            circle_marker_98bfe84a9af34e63aab635529458ea95.bindPopup(popup_d6884c9bd2e74a8ea3d9235970e6bafd);
+
+            
+        
+        
+            
+
+            var circle_marker_269e05dd8a6944c08f837c7e98ea8ed3 = L.circle(
+                [57.469405,-4.230246],
+                2.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_337f87307b19471a9462d1531a81ebc7 = L.popup({maxWidth: '300'});
+
+            
+                var html_d00f3d51a0fa4d8aa8c67d9a8b6afdfc = $('         <div id="html_d00f3d51a0fa4d8aa8c67d9a8b6afdfc"                 style="width: 100.0%; height: 100.0%;">                 University of the Highlands and Islands // Students:7850</div>                 ')[0];
+                popup_337f87307b19471a9462d1531a81ebc7.setContent(html_d00f3d51a0fa4d8aa8c67d9a8b6afdfc);
+            
+
+            circle_marker_269e05dd8a6944c08f837c7e98ea8ed3.bindPopup(popup_337f87307b19471a9462d1531a81ebc7);
+
+            
+        
+        
+            
+
+            var circle_marker_5f7ad835bb4d432a9de22d91e5639c98 = L.circle(
+                [55.149335,-6.676089],
+                6.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_2fd2c2e3be52419680efe5309d1cbc78 = L.popup({maxWidth: '300'});
+
+            
+                var html_e1e8918695ae42bcb80274aa2801cd5a = $('         <div id="html_e1e8918695ae42bcb80274aa2801cd5a"                 style="width: 100.0%; height: 100.0%;">                 Ulster University // Students:26085</div>                 ')[0];
+                popup_2fd2c2e3be52419680efe5309d1cbc78.setContent(html_e1e8918695ae42bcb80274aa2801cd5a);
+            
+
+            circle_marker_5f7ad835bb4d432a9de22d91e5639c98.bindPopup(popup_2fd2c2e3be52419680efe5309d1cbc78);
+
+            
+        
+        
+            
+
+            var circle_marker_083e644d91e44856a252b9e5acf1ba6f = L.circle(
+                [52.052392,1.163459],
+                2.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_f1bf07d04a6d42d296ded1766dd52d81 = L.popup({maxWidth: '300'});
+
+            
+                var html_c4685b8efca94006abbb907ad61aeca5 = $('         <div id="html_c4685b8efca94006abbb907ad61aeca5"                 style="width: 100.0%; height: 100.0%;">                 University of Suffolk // Students:5060</div>                 ')[0];
+                popup_f1bf07d04a6d42d296ded1766dd52d81.setContent(html_c4685b8efca94006abbb907ad61aeca5);
+            
+
+            circle_marker_083e644d91e44856a252b9e5acf1ba6f.bindPopup(popup_f1bf07d04a6d42d296ded1766dd52d81);
+
+            
+        
+        
+            
+
+            var circle_marker_641c54de650a4d6da019d583ac5d62c6 = L.circle(
+                [52.48184,-1.905939],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_d5827b47e7f14cfd817ce0a933148d28 = L.popup({maxWidth: '300'});
+
+            
+                var html_a3477d5b00834a26a9c0bee630319d33 = $('         <div id="html_a3477d5b00834a26a9c0bee630319d33"                 style="width: 100.0%; height: 100.0%;">                 University College Birmingham // Students:4855</div>                 ')[0];
+                popup_d5827b47e7f14cfd817ce0a933148d28.setContent(html_a3477d5b00834a26a9c0bee630319d33);
+            
+
+            circle_marker_641c54de650a4d6da019d583ac5d62c6.bindPopup(popup_d5827b47e7f14cfd817ce0a933148d28);
+
+            
+        
+        
+            
+
+            var circle_marker_b305fdec24d54072b5c436ed88ec6454 = L.circle(
+                [51.523569,-0.132424],
+                8.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_ad2be56e2930410d9a733c527147d96e = L.popup({maxWidth: '300'});
+
+            
+                var html_fbc0214b028748adaa8a7cc3d9cc7dca = $('         <div id="html_fbc0214b028748adaa8a7cc3d9cc7dca"                 style="width: 100.0%; height: 100.0%;">                 University College London[c] // Students:35615</div>                 ')[0];
+                popup_ad2be56e2930410d9a733c527147d96e.setContent(html_fbc0214b028748adaa8a7cc3d9cc7dca);
+            
+
+            circle_marker_b305fdec24d54072b5c436ed88ec6454.bindPopup(popup_ad2be56e2930410d9a733c527147d96e);
+
+            
+        
+        
+            
+
+            var circle_marker_1d19f7ad2e584946847dd179ea6f6d9d = L.circle(
+                [52.385576,-1.564787],
+                5.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_677c3296505f45c8a1db6426d66a1fc1 = L.popup({maxWidth: '300'});
+
+            
+                var html_7b2789e4280744bfa7cf34cfd63d3262 = $('         <div id="html_7b2789e4280744bfa7cf34cfd63d3262"                 style="width: 100.0%; height: 100.0%;">                 University of Warwick // Students:23685</div>                 ')[0];
+                popup_677c3296505f45c8a1db6426d66a1fc1.setContent(html_7b2789e4280744bfa7cf34cfd63d3262);
+            
+
+            circle_marker_1d19f7ad2e584946847dd179ea6f6d9d.bindPopup(popup_677c3296505f45c8a1db6426d66a1fc1);
+
+            
+        
+        
+            
+
+            var circle_marker_b92ef33aabef411c890ae30efd587e18 = L.circle(
+                [51.501079,-2.547458],
+                6.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_17e358c1c9cd445290ec559c093e0018 = L.popup({maxWidth: '300'});
+
+            
+                var html_376d5b991fb24c5bb6140b09f6c6a9c8 = $('         <div id="html_376d5b991fb24c5bb6140b09f6c6a9c8"                 style="width: 100.0%; height: 100.0%;">                 University of the West of England // Students:26670</div>                 ')[0];
+                popup_17e358c1c9cd445290ec559c093e0018.setContent(html_376d5b991fb24c5bb6140b09f6c6a9c8);
+            
+
+            circle_marker_b92ef33aabef411c890ae30efd587e18.bindPopup(popup_17e358c1c9cd445290ec559c093e0018);
+
+            
+        
+        
+            
+
+            var circle_marker_41da340090474d6ca7ba2048beda430c = L.circle(
+                [55.843316,-4.429782],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_8f1a1c07efbb4e89bf391ba5f9875dcc = L.popup({maxWidth: '300'});
+
+            
+                var html_2a220541b995471887cca167a0715e56 = $('         <div id="html_2a220541b995471887cca167a0715e56"                 style="width: 100.0%; height: 100.0%;">                 University of the West of Scotland // Students:14730</div>                 ')[0];
+                popup_8f1a1c07efbb4e89bf391ba5f9875dcc.setContent(html_2a220541b995471887cca167a0715e56);
+            
+
+            circle_marker_41da340090474d6ca7ba2048beda430c.bindPopup(popup_8f1a1c07efbb4e89bf391ba5f9875dcc);
+
+            
+        
+        
+            
+
+            var circle_marker_3fe6c886bec343f59a6b2ac4ed9e0984 = L.circle(
+                [51.516792,-0.143367],
+                5.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_1dda0629eb8a4844be777cdf34709360 = L.popup({maxWidth: '300'});
+
+            
+                var html_d0662a39213a4d4ea51c3e131b652047 = $('         <div id="html_d0662a39213a4d4ea51c3e131b652047"                 style="width: 100.0%; height: 100.0%;">                 University of Westminster // Students:20465</div>                 ')[0];
+                popup_1dda0629eb8a4844be777cdf34709360.setContent(html_d0662a39213a4d4ea51c3e131b652047);
+            
+
+            circle_marker_3fe6c886bec343f59a6b2ac4ed9e0984.bindPopup(popup_1dda0629eb8a4844be777cdf34709360);
+
+            
+        
+        
+            
+
+            var circle_marker_5b59aa59b14d40b598fdbeed5e892d3c = L.circle(
+                [51.060002,-1.32674],
+                2.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_8eca9de5e98e48c6b7a2ed3d8c8b05bb = L.popup({maxWidth: '300'});
+
+            
+                var html_c077613f023e4960949f8653f5cdba84 = $('         <div id="html_c077613f023e4960949f8653f5cdba84"                 style="width: 100.0%; height: 100.0%;">                 University of Winchester // Students:7485</div>                 ')[0];
+                popup_8eca9de5e98e48c6b7a2ed3d8c8b05bb.setContent(html_c077613f023e4960949f8653f5cdba84);
+            
+
+            circle_marker_5b59aa59b14d40b598fdbeed5e892d3c.bindPopup(popup_8eca9de5e98e48c6b7a2ed3d8c8b05bb);
+
+            
+        
+        
+            
+
+            var circle_marker_146648eb4ffe456daadca2afa8cd184c = L.circle(
+                [52.587529,-2.12806],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_e1b5fea4f4104a2091f2e117fe4cdb05 = L.popup({maxWidth: '300'});
+
+            
+                var html_6969bd50cd6242dda7109aba08ecfa92 = $('         <div id="html_6969bd50cd6242dda7109aba08ecfa92"                 style="width: 100.0%; height: 100.0%;">                 University of Wolverhampton // Students:19065</div>                 ')[0];
+                popup_e1b5fea4f4104a2091f2e117fe4cdb05.setContent(html_6969bd50cd6242dda7109aba08ecfa92);
+            
+
+            circle_marker_146648eb4ffe456daadca2afa8cd184c.bindPopup(popup_e1b5fea4f4104a2091f2e117fe4cdb05);
+
+            
+        
+        
+            
+
+            var circle_marker_418cbef9d87c47009c8427bd60b6c4ca = L.circle(
+                [52.197366,-2.243085],
+                3.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_d16edb609b4e436ab1c6c391e3be38b6 = L.popup({maxWidth: '300'});
+
+            
+                var html_65881f05800445519d10bf497c41a758 = $('         <div id="html_65881f05800445519d10bf497c41a758"                 style="width: 100.0%; height: 100.0%;">                 University of Worcester // Students:10065</div>                 ')[0];
+                popup_d16edb609b4e436ab1c6c391e3be38b6.setContent(html_65881f05800445519d10bf497c41a758);
+            
+
+            circle_marker_418cbef9d87c47009c8427bd60b6c4ca.bindPopup(popup_d16edb609b4e436ab1c6c391e3be38b6);
+
+            
+        
+        
+            
+
+            var circle_marker_6fe30ee71c384c4e872ea0c2e4b2f8dc = L.circle(
+                [51.737196,0.428133],
+                1.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_abbe90538c2444489f9cf114ba09639d = L.popup({maxWidth: '300'});
+
+            
+                var html_54fac3d721e348d9a0126ff4a7561aea = $('         <div id="html_54fac3d721e348d9a0126ff4a7561aea"                 style="width: 100.0%; height: 100.0%;">                 Writtle University College // Students:760</div>                 ')[0];
+                popup_abbe90538c2444489f9cf114ba09639d.setContent(html_54fac3d721e348d9a0126ff4a7561aea);
+            
+
+            circle_marker_6fe30ee71c384c4e872ea0c2e4b2f8dc.bindPopup(popup_abbe90538c2444489f9cf114ba09639d);
+
+            
+        
+        
+            
+
+            var circle_marker_daffb68312394d818ad61651e9d32b7a = L.circle(
+                [53.964844,-1.079543],
+                2.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_f6cd1bce3b004ce19f3ea1060e210c52 = L.popup({maxWidth: '300'});
+
+            
+                var html_8aa305919a5245fa9c1e182b5481f574 = $('         <div id="html_8aa305919a5245fa9c1e182b5481f574"                 style="width: 100.0%; height: 100.0%;">                 York St John University // Students:6550</div>                 ')[0];
+                popup_f6cd1bce3b004ce19f3ea1060e210c52.setContent(html_8aa305919a5245fa9c1e182b5481f574);
+            
+
+            circle_marker_daffb68312394d818ad61651e9d32b7a.bindPopup(popup_f6cd1bce3b004ce19f3ea1060e210c52);
+
+            
+        
+        
+            
+
+            var circle_marker_c68fac4e83854cb79c1c6855da6cc626 = L.circle(
+                [53.948278,-1.051673],
+                4.0,
+                {
+                    color: 'black',
+                    fillColor: '#33bb33',
+                    fillOpacity: 0.5
+                    }
+                )
+                .addTo(map_ead01d63bfcb43b784bcf8ff91791533);
+            
+        
+            
+            var popup_706e5c050bbd4d5992832ca42892862b = L.popup({maxWidth: '300'});
+
+            
+                var html_3ed67263bd6b43b494eee232482e6eeb = $('         <div id="html_3ed67263bd6b43b494eee232482e6eeb"                 style="width: 100.0%; height: 100.0%;">                 University of York // Students:16835</div>                 ')[0];
+                popup_706e5c050bbd4d5992832ca42892862b.setContent(html_3ed67263bd6b43b494eee232482e6eeb);
+            
+
+            circle_marker_c68fac4e83854cb79c1c6855da6cc626.bindPopup(popup_706e5c050bbd4d5992832ca42892862b);
+
+            
+        
+        
+        
+        </script>
+        
