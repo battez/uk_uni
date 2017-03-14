@@ -41,8 +41,10 @@ linear = cm.LinearColormap(['green', 'yellow', 'red'],
 
 idx = 0
 remove = ['country']
-curr_place_type = 'a'
-feature_group = dict()
+curr_place_type = 'admin'
+
+# todo: make this have a group for each place_type so they can all be toggled. 
+feature_group = folium.FeatureGroup(name='toggle place_type: admin')
 
 # fixme - will calculate the color based on the count (tweet intensity)
 for row in df.itertuples():
@@ -57,9 +59,6 @@ for row in df.itertuples():
         continue
 
     
-
-
-    
     # bounding box corners for every Place
     bottom_left = list()
     top_right = list()
@@ -72,17 +71,22 @@ for row in df.itertuples():
     
     
     string = '%s: %d tweets. (type:%s)' % (name, count, place_type)
-    folium.features.RectangleMarker(
+    marker = folium.features.RectangleMarker(
         bounds=[bottom_left, top_right],
         color=styles['color'],
         fill_color=linear(count),
         fill_opacity=styles['opacity'],
-        popup=string).add_to(fmap)
+        popup=string)
+    if(place_type == 'admin'):
+        feature_group.add_child(marker)
+    
+    else:
+        fmap.add_child(marker)
 
 
 
-
-
+fmap.add_child(feature_group)
+folium.LayerControl().add_to(fmap)
 # output both maps
 fmap.save(output_osm)
     
