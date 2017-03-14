@@ -31,14 +31,15 @@ centre = [df['place.0.bounding_box.coordinates.0.0.1'].mean(), df['place.0.bound
 df = df.sort_values(['place.0.place_type'], ascending=[True])
 
 
-fmap = folium.Map(location=centre, zoom_start=zoom_start, tiles="Cartodb Positron")
+fmap = folium.Map(location=centre, max_zoom=30, zoom_start=zoom_start, tiles="Cartodb Positron")
 
 # box styles
 styles = {'opacity' : 0.1, 'color' : '#323232', 'fill_color':'red' }
-threshold = 4000 # max no of count we will allow
+threshold = 4 # max no of count we will allow
 linear = cm.LinearColormap(['green', 'yellow', 'red'],
                            vmin=1, vmax=500)
-
+radius = 5
+colors = {'admin' : 'black', 'city' : 'purple' , 'poi' : 'yellow' , 'neighborhood' : 'red', 'country' : 'white'}
 idx = 0
 remove = ['country']
 curr_place_type = 'admin'
@@ -69,17 +70,28 @@ for row in df.itertuples():
     top_right.append(row[9])
     top_right.append(row[8])
     
+
     
     string = '%s: %d tweets. (type:%s)' % (name, count, place_type)
-    marker = folium.features.RectangleMarker(
-        bounds=[bottom_left, top_right],
-        color=styles['color'],
-        fill_color=linear(count),
-        fill_opacity=styles['opacity'],
-        popup=string)
+    if bottom_left[0] != top_right[0]:
+        marker = folium.features.RectangleMarker(
+            bounds=[bottom_left, top_right],
+            color=colors[place_type],
+            fill_color=linear(count),
+            fill_opacity=styles['opacity'],
+            popup=string)
+    else:
+        # sometimes the Places are point coordinates!
+        marker = folium.CircleMarker(
+            location=bottom_left,
+            radius=radius,
+            color=colors[place_type],
+            fill_color=linear(count),
+            # fill_opacity=styles['opacity'] * 3,
+            popup=string)
     if(place_type == 'admin'):
         feature_group.add_child(marker)
-    
+
     else:
         fmap.add_child(marker)
 
