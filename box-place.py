@@ -46,7 +46,7 @@ adjust_scale_color = 100
 linear = cm.LinearColormap(['green', 'yellow', 'red'], vmin=1, vmax=round(threshold/adjust_scale_color)) # 'yellow',
 linear.caption = 'Tweet intensity (scaled)' 
 
-radius = 8
+radius = 6
 colors = {'admin' : 'black', 'city' : 'purple' , 'poi' : '#3186cc' , 'neighborhood' : 'blue', 'country' : 'white'}
 idx = 0
 remove = ['country']
