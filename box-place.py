@@ -11,6 +11,12 @@ import folium
 # print(folium.__version__)
 import branca.colormap as cm
 
+from folium.plugins import FloatImage
+url = 'img/accu-snow-weather.png'
+
+
+
+
 
 # FeatureGroup, Marker, LayerControl
 
@@ -34,12 +40,14 @@ df = df.sort_values(['place.0.place_type'], ascending=[True])
 fmap = folium.Map(location=centre, max_zoom=30, zoom_start=zoom_start, tiles="Cartodb Positron")
 
 # box styles
-styles = {'opacity' : 0.1, 'color' : '#323232', 'fill_color':'red' }
-threshold = 4000 # max no of count we will allow
-linear = cm.LinearColormap(['green', 'yellow', 'red'],
-                           vmin=1, vmax=500)
-radius = 5
-colors = {'admin' : 'black', 'city' : 'purple' , 'poi' : 'yellow' , 'neighborhood' : 'red', 'country' : 'white'}
+styles = {'opacity' : 0.15, 'color' : '#323232', 'fill_color':'red' }
+threshold = 5000 # max no of count we will allow
+adjust_scale_color = 100
+linear = cm.LinearColormap(['green', 'yellow', 'red'], vmin=1, vmax=round(threshold/adjust_scale_color)) # 'yellow',
+linear.caption = 'Tweet intensity (scaled)' 
+
+radius = 8
+colors = {'admin' : 'black', 'city' : 'purple' , 'poi' : '#3186cc' , 'neighborhood' : 'blue', 'country' : 'white'}
 idx = 0
 remove = ['country']
 curr_place_type = 'admin'
@@ -72,7 +80,7 @@ for row in df.itertuples():
     
 
     
-    string = '%s: %d tweets. (type:%s)' % (name, count, place_type)
+    string = '%s: %d tweets. Type:%s' % (name, count, place_type)
     if bottom_left[0] != top_right[0]:
         marker = folium.features.RectangleMarker(
             bounds=[bottom_left, top_right],
@@ -81,12 +89,15 @@ for row in df.itertuples():
             fill_opacity=styles['opacity'],
             popup=string)
     else:
+        # icon=folium.Icon(color='red', icon='info-sign')
         # sometimes the Places are point coordinates!
-        marker = folium.CircleMarker(
+        marker = folium.RegularPolygonMarker(
             location=bottom_left,
             radius=radius,
             color=colors[place_type],
+            weight=0,
             fill_color=linear(count),
+            number_of_sides=3,
             # fill_opacity=styles['opacity'] * 3,
             popup=string)
     if(place_type == 'admin'):
@@ -96,9 +107,16 @@ for row in df.itertuples():
         fmap.add_child(marker)
 
 
-
+fmap.add_child(linear) 
 fmap.add_child(feature_group)
-folium.LayerControl().add_to(fmap)
+# folium.TileLayer('openstreetmap').add_to(fmap)
+folium.TileLayer('stamenterrain').add_to(fmap)
+folium.LayerControl(collapsed=False).add_to(fmap)
+
+# todo: add in choro layer with states totals as per:
+# https://nbviewer.jupyter.org/github/python-visualization/folium/blob/master/examples/Quickstart.ipynb
+# need to make a df from States from full_name last letters to do this.
 # output both maps
+FloatImage(url, bottom=3, left=59).add_to(fmap)
 fmap.save(output_osm)
     
