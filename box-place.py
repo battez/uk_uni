@@ -35,7 +35,7 @@ fmap = folium.Map(location=centre, max_zoom=30, zoom_start=zoom_start, tiles="Ca
 
 # box styles
 styles = {'opacity' : 0.1, 'color' : '#323232', 'fill_color':'red' }
-threshold = 4 # max no of count we will allow
+threshold = 4000 # max no of count we will allow
 linear = cm.LinearColormap(['green', 'yellow', 'red'],
                            vmin=1, vmax=500)
 radius = 5
