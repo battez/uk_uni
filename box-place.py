@@ -8,17 +8,11 @@ import os.path
 
 # Map related:
 import folium
-# print(folium.__version__)
+
 import branca.colormap as cm
 
 from folium.plugins import FloatImage
 url = 'img/accu-snow-weather.png'
-
-
-
-
-
-# FeatureGroup, Marker, LayerControl
 
 
 # data set-up:
@@ -26,8 +20,13 @@ locs = 'places_grouped.csv' # lats longs and names
 dfin = pd.read_csv(locs)
 df = dfin.set_index(['_id'])
 all = df.index.tolist()
-# print(df.head(2))
+# print(df.head(3))
 # print(df.columns)
+# print(df.describe())
+with_states = df['place.0.name'].str.contains('\s[A-Z][A-Z]$', na=False, regex=True)
+num_states = with_states.sum()  
+
+# states = df[df[1].str.extract('\s[A-Z][A-Z]$')].sum()  
 
 # MAPS and their params
 filename = os.path.basename(__file__)
@@ -36,7 +35,7 @@ zoom_start = 7
 centre = [df['place.0.bounding_box.coordinates.0.0.1'].mean(), df['place.0.bounding_box.coordinates.0.1.0'].mean()] # Pennsylvania-ish
 df = df.sort_values(['place.0.place_type'], ascending=[True])
 
-
+# Setup the map: 
 fmap = folium.Map(location=centre, max_zoom=30, zoom_start=zoom_start, tiles="Cartodb Positron")
 
 # box styles
@@ -54,6 +53,7 @@ curr_place_type = 'admin'
 
 # todo: make this have a group for each place_type so they can all be toggled. 
 feature_group = folium.FeatureGroup(name='toggle place_type: admin')
+marker_cluster = folium.MarkerCluster("Clustered Places").add_to(fmap)
 
 # fixme - will calculate the color based on the count (tweet intensity)
 for row in df.itertuples():
@@ -65,8 +65,7 @@ for row in df.itertuples():
     # skip some values that just screw up the map
     if (not isinstance(place_type, str)) or (not isinstance(name, str)) or\
      (place_type in remove) or (name[-6:] == 'Canada') or (count > threshold):
-        continue
-
+        continue # i.e. omit all these ones
     
     # bounding box corners for every Place
     bottom_left = list()
@@ -78,8 +77,7 @@ for row in df.itertuples():
     top_right.append(row[9])
     top_right.append(row[8])
     
-
-    
+    # now build markers for map and their popups:
     string = '%s: %d tweets. Type:%s' % (name, count, place_type)
     if bottom_left[0] != top_right[0]:
         marker = folium.features.RectangleMarker(
@@ -98,13 +96,13 @@ for row in df.itertuples():
             weight=0,
             fill_color=linear(count),
             number_of_sides=3,
-            # fill_opacity=styles['opacity'] * 3,
             popup=string)
+
     if(place_type == 'admin'):
         feature_group.add_child(marker)
 
     else:
-        fmap.add_child(marker)
+        marker.add_to(marker_cluster)
 
 
 fmap.add_child(linear) 
