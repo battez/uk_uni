@@ -12,7 +12,7 @@ import folium
 import branca.colormap as cm
 
 from folium.plugins import FloatImage
-url = 'img/accu-snow-weather.png'
+url = 'img/accu-snow-weather-sm.jpg'
 
 
 # data set-up:
@@ -36,24 +36,31 @@ centre = [df['place.0.bounding_box.coordinates.0.0.1'].mean(), df['place.0.bound
 df = df.sort_values(['place.0.place_type'], ascending=[True])
 
 # Setup the map: 
-fmap = folium.Map(location=centre, max_zoom=30, zoom_start=zoom_start, tiles="Cartodb Positron")
+fmap = folium.Map(location=centre, max_zoom=30, zoom_start=zoom_start, control_scale=True, tiles="stamenterrain")
 
 # box styles
-styles = {'opacity' : 0.15, 'color' : '#323232', 'fill_color':'red' }
+styles = {'opacity' : 0.2, 'color' : '#323232', 'fill_color':'red' }
 threshold = 5000 # max no of count we will allow
 adjust_scale_color = 100
 linear = cm.LinearColormap(['green', 'yellow', 'red'], vmin=1, vmax=round(threshold/adjust_scale_color)) # 'yellow',
 linear.caption = 'Tweet intensity (scaled)' 
 
-radius = 6
-colors = {'admin' : 'black', 'city' : 'purple' , 'poi' : '#3186cc' , 'neighborhood' : 'blue', 'country' : 'white'}
+# for point marker size
+radius = 10 
+
+# different place_types for Places.
+colors = {'admin' : 'black', 'city' : 'purple' , 'poi' : '#318633' , 'neighborhood' : 'blue', 'country' : 'white'}
 idx = 0
 remove = ['country']
-curr_place_type = 'admin'
 
-# todo: make this have a group for each place_type so they can all be toggled. 
-feature_group = folium.FeatureGroup(name='toggle place_type: admin')
-marker_cluster = folium.MarkerCluster("Clustered Places").add_to(fmap)
+
+feature_groups = colors.copy()
+# make this have a group for each place_type so they can all be toggled. 
+for key, value in feature_groups.items():
+    if key not in remove:
+        feature_groups[key] = folium.FeatureGroup(name='enable place_type: ' + key)
+
+marker_cluster = folium.MarkerCluster("enable place_type: point-of-interest").add_to(fmap)
 
 # fixme - will calculate the color based on the count (tweet intensity)
 for row in df.itertuples():
@@ -95,26 +102,27 @@ for row in df.itertuples():
             color=colors[place_type],
             weight=0,
             fill_color=linear(count),
-            number_of_sides=3,
+            number_of_sides=6,
             popup=string)
 
-    if(place_type == 'admin'):
-        feature_group.add_child(marker)
-
-    else:
+    if(place_type == 'poi'):
         marker.add_to(marker_cluster)
+    else:
+        feature_groups[place_type].add_child(marker)
 
 
 fmap.add_child(linear) 
-fmap.add_child(feature_group)
+for key, feature_group in feature_groups.items():
+    if (key not in remove) and (key is not 'poi'):
+        fmap.add_child(feature_group)
 # folium.TileLayer('openstreetmap').add_to(fmap)
-folium.TileLayer('stamenterrain').add_to(fmap)
+folium.TileLayer('Cartodb Positron').add_to(fmap)
 folium.LayerControl(collapsed=False).add_to(fmap)
 
 # todo: add in choro layer with states totals as per:
 # https://nbviewer.jupyter.org/github/python-visualization/folium/blob/master/examples/Quickstart.ipynb
 # need to make a df from States from full_name last letters to do this.
 # output both maps
-FloatImage(url, bottom=3, left=59).add_to(fmap)
+FloatImage(url, bottom=3, right=1).add_to(fmap)
 fmap.save(output_osm)
     
